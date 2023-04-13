@@ -1,0 +1,54 @@
+.footerButton:hover > div {
+  border-top-color: var(--color-royal-blue) !important;
+}
+
+.footerButtonActive {
+  position: relative;
+  margin-left: -14px;
+  &:hover > div {
+    border-bottom-color: rgb(31 41 55/ 0.75) !important;
+  }
+}
+
+.footerButtonBg {
+  height: 0;
+  width: 63px;
+  border-top: 40px solid rgb(31 41 55/ 0.75) !important;
+  border-right: 28px solid transparent;
+  box-sizing: border-box;
+  display: block;
+}
+
+.footerButtonBgActive {
+  height: 0;
+  width: 63px;
+  box-sizing: border-box;
+  display: block;
+  border-bottom: 40px solid var(--color-royal-blue) !important;
+  border-left: 28px solid transparent !important;
+}
+
+.socialMediaButtons {
+  margin-top: 8px;
+  margin-left: 2px;
+  width: 250px;
+  border-top: 40px solid rgb(31 41 55/ 0.75) !important;
+  border-right: 28px solid transparent;
+  box-sizing: border-box;
+  & > a {
+    margin-top: -48px;
+  }
+}
+
+.legalLink {
+  background: rgb(31 41 55/ 0.75) !important;
+  display: inline-block;
+  text-decoration: none;
+  transform: skew(-35deg);
+  color: white;
+  height: 40px;
+  padding: 7px 20px;
+  &:hover {
+    background-color: var(--color-royal-blue) !important;
+  }
+}

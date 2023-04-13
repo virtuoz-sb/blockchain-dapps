@@ -1,0 +1,200 @@
+{
+    "Home" : {
+        "top_slider" :{
+            "content"    : "세계 최초의 블록 체인은 대체 불가능한 토큰 및 분산 형 금융을 지원하는 여러 플랫폼에서 일인칭 슈팅 게임을 지원했습니다."
+        },
+        "ownership" : {
+            "the_future_is" : "미래는",
+            "true"          : "사실입니다.",
+            "ownership!"    : "소유권!",
+            "content"       : "전통적인 게임은 게임 내 자산에 대한 일시적 소유권을 부여합니다. 게임을 떠나는 순간 자산은 사라집니다. CitizenFi는 플레이어에게 블록 체인 기술을 사용하여 게임 내 자산에 대한 완전한 소유권을 제공합니다. 모든 단일 항목은 이더 리움 블록 체인을 기반으로 한 대체 불가능한 토큰 (NFT)입니다. 당신은 하나를 소유하고 있으며 영구적으로 당신의 것입니다. 판매, 선물, 스테이 킹 또는 담보로 사용할 수 있습니다.",
+            "document"      : "문서"
+        },
+        "nft_ecosystem" : {
+            "title"     : "NFT 생태계",
+            "content"   : "플레이어 무기고에는 사용되지 않은 수많은 게임 내 자산이 있습니다. 플레이어는 세션 내내 무기고에있는 자산의 최대 70 %를 사용하지 않을 가능성이 높습니다. 전통적인 게임은 판매 할 기회가없는 반면 다른 블록 체인 기반 게임은 판매 할 수있는 옵션을 제공합니다. CitizenFi는 향후 필요할 수도 있으므로 사용하지 않은 NFT로 수행 할 작업에 대한 여러 옵션을 제공합니다.",
+            "play"      : "게임 내 자산으로 NFT는 모바일 및 PC에서 CitizenFI FPS 게임을 플레이하는 데 사용할 수 있습니다.",
+            "trade"     : "NFT는 게임에서 인출 할 수 있으며 제한없이 모든 NFT 마켓 플레이스에서 자유롭게 거래 할 수 있습니다.",
+            "collateral": "NFT는 CitizenFi 대출 프로토콜에서 담보 형식으로도 사용할 수 있습니다.",
+            "leaf"      : "사용하지 않은 NFT를 분산 된 농장 풀에 스테이 킹하여 디지털 통화를 농장하십시오."
+        },
+        "about_game" : {
+            "title_1"   : "게임에",
+            "title_2"   : "대해",
+            "content_1" : "Citizen Fi : Meta City는 Binance Smart Chain에서 실행되는 블록 체인 기반 롤 플레잉 게임입니다. 각 무기는 NFT (Non-Fungible Token)로 게임을 플레이하고 탈 중앙화 풀에 지분을 걸 수 있습니다.",
+            "content_2" : "메타 시티의 북부는 거주자들이 메타 시티의 귀중한 Ciphi 금속을 채굴하도록 강요 한 Planet Kaijin의 외계인이 점령하고 있습니다. 시에서 가장 큰 광산 회사 인 Meta City Company는 군사 계약자를 고용하여시 북부에 갇힌 작업 중 일부를 구출하고 외계인이 Ciphi와 함께 무엇을 원하는지 알아 내도록 돕습니다."
+        },
+        "reshaping_industry" : {
+            "title"     : "NFT 산업 재편",
+            "content"   : "NFT 산업은 매우 수익성이 높지만 특정 문제인 청산 문제도 있습니다. 디지털 자산으로서 Current NFT는 자산이 소유자에게 속하고 소유자가 원하는 가격으로 재판매 할 권리가 있기 때문에 특별한 가치가 없습니다. 이것은 좋을 수 있지만 그 자체로 부정적인 영향을 미칩니다. NFT는 높은 가격으로 구매할 수 있지만 구매자가 동일한 가격 이상으로 재판매 할 가능성은 거의 없습니다. 즉각적인 청산 옵션도 존재하지 않으므로 소유자는 자산을 청산 할 수있는 구매자를 찾아야합니다. 우리는이 문제를 해결하기 위해 새로운 메커니즘을 사용하기로 결정했습니다.",
+            "face_value": "각 NFT는 액면가로 발행됩니다. 토큰은 각 NFT 액면가를 발행하기 위해 스마트 계약에 고정됩니다. 각 NFT의 액면가는 잠긴 토큰과 동일합니다. 소유자는 구매자가 지불 할 의사가있는 한 원하는 가격으로 재판매 할 수 있습니다.",
+            "liquidation" : "NFT는 판매되지 않으면 즉시 청산 될 수 있습니다. 소유자는 자산을 발행하기 위해 잠긴 액면가를 얻기 위해 NFT를 소각 할 수 있습니다. 액면가로 자산을 측정하는 동안 CitizenFi는 플레이어가 NFT를 담보로 사용하여 풀에서 빌릴 수 있습니다."
+        },
+        "early_asset_offer" : {
+            "title"     : "초기 자산 제공",
+            "content"   : "현재 진행중인 제한된 양의 NFT 제공. 부드러운 모험과 채굴 활동을 위해 오늘 당신의 것을 잡으십시오."
+        },
+        "multiple_platforms" : {
+            "title"     : "여러 플랫폼",
+            "content"   : "모바일 또는 PC 사용자입니까? 지구는 외계인 침략자로부터 그녀를 보호하기 위해 당신이 필요합니다. 시민 군대에 합류하여 지구를 위해 싸우고, 도시에서 도시로 이동하면서 인류의 자유와 문화를 보존하고 침략자의 계획을 더럽 히고 점령 된 도시를 해방하십시오."
+        },
+        "footer" : {
+            "subscribe_text" : "뉴스 레터를 구독하십시오.",
+            "your_email_address" : "귀하의 이메일 주소"
+        }
+    },
+    "TopPage" : {
+        "CitizenSantaFe" : {
+            "ttl"        : "시티즌<br/><span>산타페</span>",
+            "content"    : "산타페는 핵심 게임 내 자산에 대한 집중적인 스테이킹 <br class='pc'>및 대출 프로토콜입니다. 작은 가스 요금과 빠른 거래를 <br class='pc'>보장하는 바이낸스 스마트 체인에서 <br class='pc'>산타페가 운영됩니다."
+        },
+        "Footer"        : {
+            "content"   : "Citizen Fi는 Arvrse Studio의 등록 상표입니다. 모든 로고는 각 소유자의 상표로 등록되어 있습니다. 기록되지 않는 한 모든 문서의 내용은 저작권입니다.",
+            "title"     : "Arvrse Studio"
+        },
+        "GameAsset"     : {
+            "content_header"    : "게임 속<br/>재충전 된 <span class='second'>자산</span><br/>",
+            "content_text"      : "시티즌 파이는 플레이어에게 게임 내 자산에 대한 완전한 소유권을 제공합니다. 게임 속 자산은 플레이어가 게임을 플레이하고 분산 된 풀에 자산을 스테이킹 한 것에 대한 보상을 받는 대체 불가능한 토큰으로 변환됩니다. 게임 내 자산의 전체 소유권을 보유한 사용자는 이를 판매, 선물하고 담보로 사용할 수 있습니다.",
+            "bottom_content"    : "시티즌 파이는 게임 내 자산의 "
+        },
+        "HighDefinition" : {
+            "content_title"     : "고화질 액션 팩<br/>1인칭 슈터",
+            "content_text"      : "메타 시티PC App을 다운로드 하여 고해상도 액션 패키지 FPS 게임을 즐기십시오. 고품질 그래픽으로 멀티플레이어를 재생합니다.",
+            "content_title_nd"  : "항상 전투 준비.<br/>메타시티 모바일과 함께",
+            "content_text_nd"   : "안드로이드 및 iOS 기기에서 메타시티의 포켓 버전을 다운로드 하여 언제든지 적과 싸울 수 있습니다."
+        },
+        "MarketPlace"   : {
+            "ttl_binance"   : "BINANCE<br/>SMART CHAIN",
+            "ttl_fps"       : "First Person<br/>Shooter",
+            "ttl_multiplayer" : "Multiplayer",
+            "ttl_nft"       : "Non-Fungible<br/>Token"
+        },
+        "MetaCity"      : {
+            "content_ttl"   : "시티즌<br/><span>메타 시티</span>",
+            "content_txt"   : "바이낸스 스마트 체인에서 실행되는 블록체인 기반<br> 1인칭 슈터 게임입니다.각 게임 내  <br>자산은 대체 불가능한 토큰입니다."
+        },
+        "MultipleCase"  : {
+            "content_top"   : "여러 사용 사례를 제공합니다.",
+            "content_play"  : "게임 내 자산을 사용하여 메타 시티 FPS 게임을 수행합니다.",
+            "content_trade" : "보조 마켓플레이스를  사용하여 게임 내 자산을 다른 사용자와 교환합니다.",
+            "content_stake" : "사용하지 않는 게임 내 자산을 분산형 풀에 투자하여 CIPHI를 획득합니다.",
+            "content_collateral" : "게임 내 자산을 담보로 대출 프로토콜에서 자금을 대출받습니다."
+        },
+        "RareFi"        : {
+            "content_ttl"   : "시티즌<br/><span>레어파이</span>",
+            "content_txt"   : "세계 최초의 보상 기반 대체 불가능한 토큰 시장 <br class='pc'>구매는 사용자가 선택한 대체 불가능한 토큰을 <br class='pc'>지원하고 CIFI 토큰으로 보상을 받습니다."
+        },
+        "Welcome"       : {
+            "body"     : "혁신적인 블록 체인은 대체 불가한  토큰 및 게임 파이낸스에 대한 지원으로 <span class='main-color'>1 인칭 슈터를</span> 가능하게 했습니다."
+        }
+    },
+    "Explore" : {
+        "EarlyAssetOffer" : {
+            "ttl" : "초기 자산 <br/><span class='second'>제공<br/></span>",
+            "txt" : "제한된 수의 게임 내 자산은 조기 자산 판매를 통해 확보됩니다. 플레이어들은 초기 스테이징을 위해 희귀 자산을 구입하고 메타 시티 FPS 게임의 알파 버전을 이용할 수 있습니다.<br/><br/> 초기 자산 항목은 기본 스토어에서 사용할 수 없으며, 플레이어는 EAO 캠페인 동안 구입한 다른 플레이어에서만 해당 자산을 얻을 수 있습니다."
+        },
+        "FightGlory"    : {
+            "ttl" : "영광을 위한&nbsp;<span class='second'>싸움<br/></span>",
+            "txt" : "액션으로 가득 찬 멀티 플레이어 모험을 위해 친구들과 팀을 이룹니다. 메트로 지역의 용감한 군인디 되어 침략자로부터 도시를 되찾거나 죽어가는 행성을 구하기 위해 외계인을 위해 싸웁니다."
+        },
+        "LimitedAssets" : {
+            "ttl" : "제한된&nbsp;<span class='second'>자산<br/></span>",
+            "txt" : "기존 FPS 게임과 달리 메타시티는 플레이어가 1차 스토어에서 구매할 수 있는 게임 내 자산 수가 제한되어 있습니다. 플레이어는 2차 스토어에 무기를 판매하기 위해 내놓는 플레이어로부터 1차 스토어에서 구입할 수 없는 다른 아이템만 구입할 수 있습니다.",
+            "desc": "\"공급량이 낮을수록 가치가 높아집니다.\""
+        },
+        "NftAssets" : {
+            "ttl"   : "NFT는 게임 속<span class='second'>&nbsp;자산입니다<br/></span>" ,
+            "content_txt"   : "블록체인은 플레이어가 게임 내 자산을 진정으로 소유할 수 있는 컨셉을 구현했습니다. 플레이어는 제한 없이 자유롭게 아이템을 입출금 할 수 있습니다.",
+            "content_sub"   : "외계인과 싸우기 위해 높은 등급과 희귀 무기를 구입하고, 스테이킹을 위해 철회하거나, 거래하거나 2차 시장을 거래하기 위해 회수 합니다.",
+            "desc": "\"인출이 허용되지 않으면 소유하지 않은 것입니다.\""
+        },
+        "TheGame"   : {
+            "ttl"   : "<span class='second'>게임<br/></span>",
+            "content_txt"   : "Meta City에 오신 것을 환영합니다. 게임 파이낸스가 탈중앙화된 파이낸스의 손길이 담긴 대체불가한 토큰을 만나는 장소입니다.  메타 시티는  플레이어가 북부 메타 시티의 정복 된 지역을 여행하면서 생존을 위해 싸우는 1 인칭 슈팅 게임입니다. 적과 싸우고 게임 내 자산 및 기타 항목을 수집하고 임무를 완수합니다.",
+            "desc"  : "... 새로운 디파이 로서의 GameFi"
+        },
+        "TopSlider" : {
+            "ttl"   : "시티즌 파이: 메타 시티",
+            "content" : "세계 최초의 블록체인은 대체불가능한 토큰과  게임 파이낸스에 대한 지원으로 여러 플랫폼에서 1인칭 슈터 게임을 가능하게 했습니다."
+        }
+    },
+    "App" : {
+        "Home" : {
+            "staking"   : "스테이 킹",
+            "farming"   : "농업",
+            "lending"   : "대출",
+            "market"    : "시장",
+            "my-asset"  : "내 자산",
+            "EAO"       : "EAO",
+            "DAO"       : "DAO",
+            "modal" : {
+                "comingcontent" : "곧 출시됩니다!"
+            }
+        }
+    },
+    "words" : {
+        "about"         : "About",
+        "about_more"    : "About More",
+        "android"       : "Android",
+        "application"   : "Application",
+        "applications"  : "응용 프로그램",
+        "approve_cifi_busd_lp" : "Approve CIFI-BUSD LP",
+        "apy"           : "Apy",
+        "cifi_busd_lp_stacked" : "CIFI-BUSD LP Stacked",
+        "cifi_earned"   : "CIFI Earned",
+        "close"         : "Close",
+        "collateral"    : "담보",
+        "coming_soon"   : "Coming Soon",
+        "connect"       : "Connect",
+        "connectWallet" : "Connect Wallet",
+        "core"          : "Core",
+        "dapp"          : "Dapp",
+        "deposit"       : "Deposit",
+        "doc"           : "Doc",
+        "document"      : "문서",
+        "download"      : "Download",
+        "earn"          : "Earn",
+        "explore"       : "탐색",
+        "explore_more"  : "Explore More",
+        "face_value"    : "Face value",
+        "faq"           : "Faq",
+        "farming"       : "Farming",
+        "harvest"       : "Harvest",
+        "home"          : "Home",
+        "ios"           : "iOS",
+        "join_whitelist": "대기자 명단 가입",
+        "key_feature"   : "Key Feature",
+        "latest_transaction" : "Latest Transaction",
+        "launch_app"    : "Launch App",
+        "leaf"          : "Leaf",
+        "learn_more"    : "더 알아보기",
+        "liquidation"   : "Liquidation",
+        "market_place"  : "시장",
+        "play"          : "플레이",
+        "play_for_free" : "무료 플레이",
+        "price"         : "Price",
+        "purchase"      : "Purchase",
+        "quick_links"   : "Quick Links",
+        "read_more"     : "Read More",
+        "rarity"        : "Rarity",
+        "santa_fe"      : "산타페",
+        "select"        : "Select",
+        "skins"         : "Skins",
+        "stake"         : "지분",
+        "staking_powa"  : "Staking Powa",
+        "steam"         : "Steam",
+        "subscribe"     : "Subscribe",
+        "support"       : "Support",
+        "token"         : "Token",
+        "trade"         : "거래",
+        "true"          : "True",
+        "view_all"      : "View All",
+        "watch_trailer" : "예고편",
+        "weapons"       : "Weapons",
+        "weapon_stats"  : "Weapon Stats",
+        "welcome_to"    : "환영합니다."
+    },
+    "const" : {
+        "site_name"     : "Citizen Fi"
+    }
+}

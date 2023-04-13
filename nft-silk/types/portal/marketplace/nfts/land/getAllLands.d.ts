@@ -1,0 +1,1 @@
+interface IGetAllLands extends IGetAllWithDynamicFiltersResponseModel {}

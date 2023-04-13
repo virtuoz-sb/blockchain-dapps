@@ -1,0 +1,32 @@
+.wrapper {
+  @apply flex items-center justify-between gap-8;
+  .label {
+    @apply text-sm font-medium text-white;
+  }
+  .description {
+    @apply text-sm text-gray-400;
+  }
+
+  .switchWrapper {
+    @apply relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200;
+
+    .knob {
+      @apply pointer-events-none relative inline-block h-5 w-5 rounded-full bg-white shadow transform ring-0 transition ease-in-out duration-200;
+      .knobIcon {
+        @apply absolute inset-0 h-full w-full flex items-center justify-center transition-opacity;
+      }
+    }
+  }
+}
+
+.error {
+  @apply mt-1 text-sm text-red-600 text-right;
+}
+
+.errorIcon {
+  @apply h-5 w-5 text-red-500;
+}
+
+.adornment {
+  @apply absolute inset-y-0 flex items-center;
+}

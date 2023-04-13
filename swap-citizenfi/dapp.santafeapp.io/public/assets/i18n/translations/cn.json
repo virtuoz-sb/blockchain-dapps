@@ -1,0 +1,79 @@
+{
+    "Home" : {
+        "top_slider" :{
+            "content"    : "全球首个跨多个平台的区块链第一人称射击游戏，支持非同质通证和去中心化金融。"
+        },
+        "ownership" : {
+            "the_future_is" : "未来是",
+            "true"          : "真实的",
+            "ownership!"    : "所有权！",
+            "content"       : "传统游戏让您暂时拥有游戏中资产的所有权，离开游戏一刻资产就消失了。 CitizenFi使用区块链技术为玩家提供了其游戏资产的完全所有权。 每一项都是基于以太坊区块链的不可替代令牌（NFT）。 您拥有一个，它是永久的。 您可以出售，赠与，抵押或将其用作抵押。",
+            "document"      : "文件"
+        },
+        "nft_ecosystem" : {
+            "title"     : "NFT生态系统",
+            "content"   : "玩家武器库上有大量未使用的游戏资产。 玩家在整个游戏过程中最有可能不使用其武器库中多达70％的资产。 传统游戏给您没有机会出售它，而其他基于区块链的游戏给您出售选项。 CitizenFi为您处理未使用的NFT提供了多种选择，因为将来您可能还会需要它们。",
+            "play"      : "作为游戏中的资产，NFT可用于在手机和PC上玩CitizenFI FPS游戏。",
+            "trade"     : "NFT可以从游戏中退出，并且可以在任何NFT市场上自由交易而不受限制。",
+            "collateral": "NFT也可以用作CitizenFi贷款协议中的抵押形式。",
+            "leaf"      : "通过将未使用的NFT放到分散的农业池中来种植数字货币。"
+        },
+        "about_game" : {
+            "title_1"   : "关于",
+            "title_2"   : "游戏",
+            "content_1" : "Citizen Fi：Meta City是在Binance智能链上运行的基于区块链的角色扮演游戏。 每个武器都是NFT（不可替代令牌），可用于玩游戏，也可用于分散式池。",
+            "content_2" : "Meta City的北部被来自Kaijin星球的外星人占领，他们迫使居民开采Meta City珍贵的Ciphi金属。 该市最大的矿业公司Meta City Company雇用了一名军事承包商，以帮助营救在城市北部被困的部分工作，并找出外星人对Ciphi的要求。"
+        },
+        "reshaping_industry" : {
+            "title"     : "重塑NFT行业",
+            "content"   : "NFT行业虽然利润丰厚，但也困扰着特定问题-清算。 作为数字资产，当前的NFT没有特别的价值，因为资产属于所有者，并且所有者有权以他/她想要的任何价格进行转售。 这可能很好，但也有其负面影响。 NFT可以以高价购买，但买家以相同价格或更高价格转售的机会很少。 即时清算的选项也不存在，所有者需要寻找买家才能清算资产。 我们已决定使用一种新的机制来解决此问题。",
+            "face_value": "每个NFT都会带有面值。 代币将被锁定在智能合约上以铸造每个NFT面值。 每个NFT的面值将等于锁定的令牌。 只要买方愿意付款，所有者就可以以期望的任何价格转售。",
+            "liquidation" : "如果不出售，NFT可以立即清算。 所有者可以刻录NFT以获得被锁定以铸造资产的面值。 在以面值衡量资产的同时，CitizenFi将允许玩家以其NFT作为抵押品从资产池中借钱。"
+        },
+        "early_asset_offer" : {
+            "title"     : "早期资产发售",
+            "content"   : "目前正在进行的NFT数量有限。 立即获取您的冒险和采矿活动。"
+        },
+        "multiple_platforms" : {
+            "title"     : "多个平台",
+            "content"   : "您是手机用户还是PC用户？ 地球需要您来帮助她防御外来入侵者。 加入公民军，为地球而战，在从一个城市到另一个城市的战斗中维护人类自由及其文化，破坏侵略者的计划并解放被占领的城市。"
+        },
+        "footer" : {
+            "subscribe_text" : "订阅我们的新闻。",
+            "your_email_address" : "您的电子邮件地址"
+        }
+    },
+    "App" : {
+        "Home" : {
+            "staking"   : "放样",
+            "farming"   : "农业",
+            "lending"   : "借贷",
+            "market"    : "市场",
+            "my-asset"  : "我的资产",
+            "EAO"       : "EAO",
+            "DAO"       : "DAO",
+            "modal" : {
+                "comingcontent" : "快来了。"
+            }
+        }
+    },
+    "words" : {
+        "collateral"    : "抵押品",
+        "close"         : "关闭",
+        "connect"       : "连接",
+        "download"   : "下载",
+        "explore"       : "探索",
+        "explore_more"  : "探索更多",
+        "face_value"    : "面值",
+        "launch_app" : "启动应用程序",
+        "leaf"          : "叶",
+        "liquidation"   : "清算",
+        "play"          : "玩",
+        "pools"          : "資金池",
+        "subscribe"     : "订阅",
+        "swap"          : "代幣兌換",
+        "trade"         : "贸易",
+        "true"       : "真实的"
+    }
+}
+

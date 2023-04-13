@@ -1,0 +1,1 @@
+interface IGetAllFarms extends IGetAllWithDynamicFiltersResponseModel {}

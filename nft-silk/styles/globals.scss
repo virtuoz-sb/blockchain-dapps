@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary-default: #4583ff;
+    --color-primary-50: #eef2ff;
+    --color-primary-100: #e0e7ff;
+    --color-primary-200: #c7d2fe;
+    --color-primary-300: #a5b4fc;
+    --color-primary-400: #818cf8;
+    --color-primary-500: #6366f1;
+    --color-primary-600: #4f46e5;
+    --color-primary-700: #4338ca;
+    --color-primary-800: #3730a3;
+    --color-primary-900: #312e81;
+    --color-secondary: #dbe1e8;
+    --text-main: #111827;
+    --text-secondary: #1e40af;
+    --accent: #009ffd;
+
+    --color-gray: #787e8a;
+    --color-dark-gray: #2e3d64;
+    --color-light-gray: #bdc6d9;
+    --color-error: #ff4545;
+    --color-market: #ffe45c;
+    --color-dark-yellow: #e9ca32;
+    --color-royal-blue: #4583ff;
+    --color-dark-blue: #3e76e5;
+    --color-royal-white: #e3e9f4;
+    --color-royal-white-rgb: 227, 233, 244;
+    --color-primary-black: #201f33;
+
+    --tw-color-blue: #4483ff;
+    --tw-color-blue-300: #4998ed;
+    --tw-color-blue-500: #4483ff;
+    --tw-color-blue-600: #325db3;
+    --tw-color-blue-700: #33436a;
+    --tw-color-blue-900: #212945;
+  }
+  button {
+    @apply focus:outline-none focus-visible:outline-none focus-visible:ring-1;
+  }
+  a {
+    @apply focus:outline-none focus-visible:outline-none focus-visible:ring-1;
+  }
+}
+
+@layer utilities {
+  /* Scroll bar stylings */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    background: #374c79;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #bdc6d9;
+    border-radius: 5vh;
+    border: 1px solid #b8b2b2;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #a7b5d2;
+  }
+}
+
+@import 'vendors';
+@import 'components';
+@import 'fonts';
+
+body {
+  @apply h-full;
+  padding-top: 0;
+  font-family: 'Gotham';
+  //background: linear-gradient(10deg, #211f34 33.96%, #3e76e5 100%) fixed !important; //original color
+  background-image: url(/images/portal-background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.app-container {
+  //height: 100vh;
+}

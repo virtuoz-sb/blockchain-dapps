@@ -1,0 +1,187 @@
+.landMap {
+  @apply w-full h-full;
+
+  .loader {
+  }
+
+  canvas {
+    background-color: black !important;
+  }
+}
+
+.miniMap,
+.legend {
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: var(--color-primary-black);
+  top: 10px;
+  left: 10px;
+  width: 170px;
+  height: 200px;
+
+  -webkit-transition: height 300ms;
+  -moz-transition: height 300ms;
+  -ms-transition: height 300ms;
+  -o-transition: height 300ms;
+  transition: height 300ms;
+
+  &.legend {
+    left: 190px;
+    height: max-content;
+    padding-bottom: 10px;
+    overflow: hidden;
+
+    .item {
+      cursor: pointer;
+      display: flex;
+      padding: 8px 0 0 16px;
+
+      .color {
+        border-radius: 2px;
+        height: 16px;
+        margin-top: 2px;
+        width: 16px;
+
+        &.land {
+          background-color: #2ac161;
+        }
+
+        &.unmintedLand {
+          background-color: #2e3645;
+        }
+
+        &.ownedLand {
+          background-color: #4583ff;
+        }
+
+        &.privateFarm {
+          background-color: #ffe45c;
+        }
+
+        &.publicFarm {
+          background-color: var(--color-royal-white);
+        }
+
+        &.contiguousLand {
+          background-color: #6bc3bd;
+        }
+      }
+
+      .itemTitle {
+        color: var(--color-light-gray);
+        font-size: 14px;
+        padding-left: 8px;
+        user-select: none;
+      }
+    }
+
+    .assetsTitle {
+      color: var(--color-light-gray);
+      font-size: 14px;
+      font-weight: 500;
+      padding: 16px 0 0 16px;
+      text-transform: uppercase;
+      user-select: none;
+    }
+
+    .separator {
+      border-color: #2e3645;
+      height: 1px;
+      margin: 15px 10px;
+    }
+
+    .button {
+      width: 153px;
+      margin-left: 9px;
+
+      :global {
+        button .children {
+          font-size: 12px !important;
+        }
+      }
+    }
+
+    .checkboxContainer {
+      color: var(--color-royal-white);
+      padding-left: 10px;
+      :global {
+        label {
+          font-size: 14px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  &.closed {
+    height: 38px;
+  }
+
+  .title {
+    color: var(--color-royal-white);
+    cursor: pointer;
+    display: flex;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 10px 0 10px 10px;
+    text-transform: uppercase;
+    width: 100%;
+    user-select: none;
+
+    .chevron {
+      @apply cursor-pointer flex;
+      margin: 6px 10px 0 auto;
+
+      div {
+        -webkit-transition: transform 150ms, margin-top 150ms;
+        -moz-transition: transform 150ms, margin-top 150ms;
+        -ms-transition: transform 150ms, margin-top 150ms;
+        -o-transition: transform 150ms, margin-top 150ms;
+        transition: transform 150ms, margin-top 150ms;
+
+        transform: rotate(0);
+      }
+
+      &.closed {
+        margin-top: 3px;
+
+        div {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+
+  .map {
+    background-repeat: no-repeat;
+    cursor: crosshair;
+    height: 150px;
+    margin-left: 10px;
+    position: relative;
+    overflow: hidden;
+    width: 150px;
+
+    div {
+      z-index: 1;
+      position: absolute;
+    }
+
+    .loader {
+      align-items: center;
+      background-color: #2e3645;
+      border: 5px solid black;
+      display: flex;
+      height: 100%;
+      width: 100%;
+      justify-content: center;
+      z-index: 5 !important;
+    }
+  }
+
+  .box {
+    border: 1px solid white;
+    cursor: grabbing;
+  }
+}

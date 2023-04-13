@@ -1,0 +1,120 @@
+@import ../../../styles/helpers
+
+.filters
+    flex-shrink: 0
+    width: 256px
+    +t
+        width: 100%
+        margin-bottom: 32px
+
+
+.item
+    &:not(:last-child)
+        margin-bottom: 24px
+
+.label
+    margin-bottom: 12px
+    +hairline-2
+    color: $neutrals5
+
+.tab
+    padding: 5px 12px
+    border-radius: 8px
+    &.active, &:hover
+        background: var(--back-dark6)
+        
+.ldsEllipsis 
+    display: inline-block
+    position: relative
+    width: 80px
+    height: 27px
+    div 
+        position: absolute
+        top: 7px
+        width: 13px
+        height: 13px
+        border-radius: 50%
+        background: #fff
+        animation-timing-function: cubic-bezier(0, 1, 1, 0)
+
+        &:nth-child(1) 
+            left: 8px
+            animation: lds-ellipsis1 0.8s infinite
+
+        &:nth-child(2) 
+            left: 8px
+            animation: lds-ellipsis2 0.8s infinite
+
+        &:nth-child(3) 
+            left: 32px
+            animation: lds-ellipsis2 0.8s infinite
+
+        &:nth-child(4) 
+            left: 56px
+            animation: lds-ellipsis3 0.8s infinite
+
+    @keyframes lds-ellipsis1 
+        0% 
+            transform: scale(0)
+        100% 
+            transform: scale(1)
+        
+
+    @keyframes lds-ellipsis3 
+        0% 
+            transform: scale(1)
+        100% 
+            transform: scale(0)
+  
+
+    @keyframes lds-ellipsis2 
+        0% 
+            transform: translate(0, 0)
+        100% 
+            transform: translate(24px, 0)
+  
+
+.transaction
+    // border: solid 1px $neutrals4
+    border-radius: 12px
+    position: fixed
+    top: 15px
+    right: 15px
+    background: $neutrals2
+    display: flex
+    overflow: hidden
+    .leftPad
+        background: $blue-light
+        padding: 15px 12px
+    .rightPad
+        display: flex
+        flex-direction: column
+        padding: 15px 100px 15px 15px
+        .notTitle
+            font-weight: bold
+        a
+            color: $blue-light
+    .close
+        top: 0px
+        right: 3px
+        background: $neutrals2
+        color: $blue-light
+        display: flex
+        position: absolute
+        cursor: pointer
+        padding: 3px
+.swap_page
+    .title
+        p
+            &:first-child
+                line-height: 1
+            &:last-child
+                font-size: 14px
+    .mainPad
+        justify-content: center
+        .exchange_history
+            +m
+                display: none
+            .tradeRow
+                display: flex
+                justify-content: space-between

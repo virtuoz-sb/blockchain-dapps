@@ -1,0 +1,43 @@
+.headerRight {
+  /* Primary/Silks Royal Black */
+  background: #201F33;
+  height: 70px;
+  box-shadow: 0px 30px 30px rgba(32, 31, 51, 0.1);
+  text-shadow: 0 0 1em rgba(255, 255, 255, 0.2), 0 0 1em rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+  //transform: matrix(-1, 0, 0, 1, 0, 0);
+  transform: skew(-35deg);
+}
+
+.headerToolMenu {
+  /* Dark gray 2 */
+  background: #2E3D64;
+  height: 70px;
+  transform: skew(-35deg);
+}
+
+.headerMenu {
+  position: relative;
+  background: #2E3D64;
+  color: white;
+  //box-shadow: 0px 30px 30px rgba(32, 31, 51, 0.1);
+  border: none;
+  height: 70px;
+  width: 60px;
+  //left: 20px;
+  text-decoration: none;
+
+  &:before {
+    content: ' ';
+    position: absolute;
+    display: block;
+    width: 44px;
+    height: 100%;
+    left: -20px;
+    background: #2E3D64;
+    //transform-origin: bottom left;
+    -ms-transform: skew(-35deg, 0deg);
+    -webkit-transform: skew(-35deg, 0deg);
+    transform: skew(-35deg, 0deg);
+  }
+}

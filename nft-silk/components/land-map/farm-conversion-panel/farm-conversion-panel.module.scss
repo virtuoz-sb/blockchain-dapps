@@ -1,0 +1,149 @@
+.container {
+  @apply rounded-md;
+  background: var(--color-primary-black);
+  position: fixed;
+  // min-height: 316px;
+  margin-right: 16px;
+  overflow-y: auto;
+  right: -450px;
+  top: 80px;
+  width: 420px;
+  z-index: 30;
+
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+
+  &.open {
+    transform: translateX(-450px);
+  }
+
+  .title {
+    color: var(--color-royal-white);
+  }
+
+  .subTitle {
+    color: var(--color-royal-white);
+    font-size: 16px;
+    font-weight: 700;
+    padding-top: 5px;
+
+    .region {
+      color: var(--color-light-gray);
+      font-weight: 350;
+      padding-left: 15px;
+    }
+  }
+
+  .farmPositions {
+    background-color: var(--color-dark-gray);
+    border-radius: 4px;
+    border: 1px solid var(--color-dark-blue);
+    min-height: 100px;
+    margin-top: 10px;
+    padding: 10px;
+
+    .position {
+      border-radius: 15px;
+      border: 1px solid var(--tw-color-blue-600);
+      color: var(--color-light-gray);
+      display: flex;
+      height: 30px;
+      font-size: 12px;
+      padding: 5px 0 5px 12px;
+      width: 90px;
+    }
+  }
+
+  .stableTypes {
+    @apply bg-slate-900;
+    border-radius: 8px 8px 0 0;
+    margin-top: 10px;
+
+    & * {
+      color: white;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    button {
+      @apply border-b-2 flex items-center justify-between;
+
+      border-color: transparent;
+      height: 46px;
+      padding: 0 18px;
+      text-align: left;
+      width: 100%;
+
+      &.open {
+        @apply border-gray-700/80;
+      }
+    }
+
+    .stableType {
+      @apply border-b-2 border-gray-700/80;
+      display: flex;
+      align-items: center;
+      height: 46px;
+      padding-left: 46px;
+
+      &:hover {
+        color: var(--color-market);
+      }
+
+      &:last-of-type {
+        border-color: transparent;
+        border-radius: 0 0 8px 8px;
+      }
+    }
+  }
+
+  .form {
+    padding-top: 12px;
+
+    .helpText {
+      color: var(--color-royal-white);
+      font-size: 16px;
+      font-weight: 400;
+      margin: 10px 0 0 30px;
+    }
+
+    .header {
+      color: var(--color-royal-white);
+      font-size: 14px;
+      font-weight: 500;
+      margin: 20px 0 8px;
+    }
+
+    label {
+      color: var(--color-royal-white);
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+
+  .submitted {
+    text-align: center;
+
+    .title {
+      color: white;
+      font-weight: 700;
+      font-size: 40px;
+      text-shadow: 0px 5px 10px rgba(255, 255, 255, 0.2);
+    }
+
+    .description {
+      color: var(--color-light-gray);
+      font-weight: 400;
+      font-size: 18px;
+    }
+  }
+
+  .stepNumber {
+    color: var(--color-gray);
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin: 20px 0 16px;
+  }
+}

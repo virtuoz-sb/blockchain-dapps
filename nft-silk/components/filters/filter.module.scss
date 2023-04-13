@@ -1,0 +1,109 @@
+.container {
+  background-color: var(--color-primary-black);
+  color: var(--color-royal-white);
+  font-size: 14px !important;
+  padding: 20px 0;
+  overflow: hidden;
+
+  -webkit-transition: max-height 300ms;
+  -moz-transition: max-height 300ms;
+  -ms-transition: max-height 300ms;
+  -o-transition: max-height 300ms;
+  transition: max-height 300ms;
+
+  &.closed {
+    max-height: 60px !important;
+  }
+}
+
+.header {
+  @apply flex justify-between cursor-pointer;
+  height: 30px;
+  white-space: nowrap;
+
+  .title {
+    @apply flex uppercase font-medium relative;
+    padding-left: 20px;
+
+    .info {
+      @apply h-4 w-4;
+      margin: 3px 0 0 8px;
+    }
+
+    .leftIcon {
+      @apply h-5 w-5 mr-2;
+    }
+  }
+
+  .chevron {
+    @apply cursor-pointer flex;
+    margin: 0 20px 0 0;
+
+    div {
+      -webkit-transition: transform 150ms, margin-top 150ms;
+      -moz-transition: transform 150ms, margin-top 150ms;
+      -ms-transition: transform 150ms, margin-top 150ms;
+      -o-transition: transform 150ms, margin-top 150ms;
+      transition: transform 150ms, margin-top 150ms;
+
+      transform: rotate(0);
+    }
+
+    &.closed {
+      div {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+.filter {
+  margin: 15px 0 0 20px;
+
+  label {
+    font-size: 14px !important;
+  }
+
+  .button {
+    border: 1px solid var(--tw-color-blue-600);
+    border-radius: 4px;
+    color: var(--color-light-gray);
+    height: 32px;
+    padding: 5px 0 6px;
+    text-align: center;
+    margin-right: 8px;
+    width: 32px;
+
+    &:hover,
+    &.selected {
+      background-color: var(--color-primary-default);
+      color: white;
+    }
+
+    &:nth-of-type(n + 6) {
+      margin-top: 10px;
+    }
+  }
+}
+
+.footer {
+  @apply flex;
+  margin: 24px 0 0 20px;
+
+  button {
+    width: 180px !important;
+
+    * {
+      font-size: 14px !important;
+    }
+  }
+
+  .clear {
+    @apply uppercase underline;
+    color: var(--color-light-gray);
+    font-weight: 450;
+    font-size: 14px;
+    line-height: 17px;
+    margin-left: 10px;
+  }
+}

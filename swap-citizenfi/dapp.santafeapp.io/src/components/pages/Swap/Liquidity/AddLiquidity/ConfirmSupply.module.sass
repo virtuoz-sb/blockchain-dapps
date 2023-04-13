@@ -1,0 +1,61 @@
+@import ../../../../../styles/helpers
+.confirmSupply
+    .mainTitle
+        +x
+            font-size: 24px!important
+    .poolAmount
+        display: flex
+        span
+            font-size: 32px
+            margin: auto 10px auto 0
+            +x
+                font-size: 24px
+        img
+            width: 32px
+            height: 32px
+            border-radius: 50%
+            margin: auto 0
+            +x
+                width: 24px
+                height: 24px
+    .subTitle
+        font-size: 24px
+        +x
+            font-size: 20px
+    .desc
+        font-size: 13px
+        margin-top: 20px
+    .prices
+        margin-top: 20px
+        display: flex
+        flex-direction: column
+        .col
+            display: flex
+            margin: 2px 0
+            *
+                margin-top: auto
+                margin-bottom: auto
+            img
+                margin-left: auto
+                margin-right: 5px
+                width: 24px
+                height: 24px
+                border-radius: 50%
+            .rateSpan
+                margin-top: 0
+                margin-bottom: auto
+            .rateCol
+                margin-left: auto
+                margin-right: 0
+                display: flex
+                flex-direction: column
+    .confirmBtn
+        border-radius: 0.875rem
+        padding: 7px 30px
+        width: fit-content
+        margin: 20px auto 5px auto
+        cursor: pointer
+        img
+            height: 12px
+            margin: 3px 20px
+            cursor: not-allowed

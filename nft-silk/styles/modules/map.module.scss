@@ -1,0 +1,16 @@
+.container {
+  @apply flex flex-col justify-center p-4 pt-28 min-h-screen max-w-full relative;
+
+  .container1 {
+    @apply flex w-3/4 self-center;
+    flex: 1 0 auto;
+
+    .container2 {
+      @apply flex-auto max-w-full relative;
+    }
+  }
+
+  canvas {
+    background-color: transparent !important;
+  }
+}

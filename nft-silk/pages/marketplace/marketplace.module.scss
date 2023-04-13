@@ -1,0 +1,34 @@
+.infiniteScroll {
+  height: calc(100vh - 256px - 115px);
+  flex-grow: 1;
+  @media (max-width: 1024px) {
+    left: 0;
+    height: calc(100vh - 256px - 125px - 10px);
+  }
+  @media (max-width: 640px) {
+    left: 0;
+    height: calc(100vh - 256px - 115px - 60px);
+  }
+}
+
+.collectionDescription p {
+  display: none;
+}
+.collectionDescription p:first-child {
+  @media (max-width: 1500px) {
+    width: 34vw;
+  }
+
+  @media (min-width: 1501px) {
+    width: 47vw;
+  }
+
+  @media (min-width: 1600px) {
+    width: 50vw;
+  }
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}

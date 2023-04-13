@@ -1,0 +1,27 @@
+.headerButton {
+  background: #354c7b !important;
+  display: inline-block;
+  padding: 29px 20px;
+  text-decoration: none;
+  transform: skew(-35deg);
+  color: white;
+  text-shadow: 0 0 1em rgba(255, 255, 255, 0.2), 0 0 1em rgba(255, 255, 255, 0.2);
+  height: 60px;
+
+  &:hover {
+    background: rgb(69 131 255 / 61%) !important;
+  }
+
+  &.active {
+    background: #4583ff !important;
+  }
+
+  &.highlight {
+    color: var(--color-market);
+    width: 185px;
+    &.active {
+      color: black;
+      background: var(--color-market) !important;
+    }
+  }
+}

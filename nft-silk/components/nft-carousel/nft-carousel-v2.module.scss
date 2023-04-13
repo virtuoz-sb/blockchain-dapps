@@ -1,0 +1,10 @@
+.selectedNft {
+  position: absolute;
+  width: 150px;
+  height: 200px;
+
+  background: linear-gradient(180deg, #4583ff 0%, rgba(69, 131, 255, 0) 100%);
+  opacity: 0.5;
+  border-radius: 8px;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}

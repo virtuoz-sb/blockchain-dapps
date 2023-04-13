@@ -1,0 +1,51 @@
+@import ../../styles/helpers
+
+.load
+    width: 32px
+    height: 32px
+.loadContainer
+    border-radius: 16px
+    // box-shadow: inset 0 0 0 2px $neutrals6
+    border: none
+    position: relative
+    z-index: 0
+    background: #000
+    +dark
+        // box-shadow: inset 0 0 0 2px $neutrals3
+    &:hover
+        box-shadow: inset 0 0 0 2px $neutrals4
+    &::after
+        background: $fc1
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        content: ""
+        opacity: 0.2
+        z-index: 2
+        transition: opacity 125ms ease-in-out
+
+        // background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%)
+        // animation-duration: 5s
+        // animation-fill-mode: forwards
+        // animation-iteration-count: infinite
+        // animation-name: placeHolderShimmer
+        // animation-timing-function: linear
+        animation: shine 2s infinite
+        background: linear-gradient(90deg,#0000 33%,rgba(255,255,255,0.3) 50%,#0000 66%) 
+        background-size: 300% 100%
+    img
+        border: none
+.model
+    position: absolute
+    right: 15%
+    bottom: 15%
+    &.loaded
+        filter: invert(1)
+    // transform: translate(-50%, -50%)
+
+
+@keyframes shine
+  0%
+    background-position: right

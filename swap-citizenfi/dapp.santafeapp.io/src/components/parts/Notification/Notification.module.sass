@@ -1,0 +1,43 @@
+@import ../../../styles/helpers
+
+.transaction
+    // border: solid 1px $neutrals4
+    border-radius: 12px
+    position: fixed
+    top: 15px
+    right: 15px
+    background: $neutrals2
+    display: flex
+    overflow: hidden
+    transition: easy all 2s
+    display: none
+    z-index: 10000
+    &:hover
+        
+    +m
+        width: 100%
+        right: 0
+        top: unset
+        bottom: 48px
+    &.active
+        display: flex
+    .leftPad
+        background: $purple
+        padding: 15px 12px
+    .rightPad
+        display: flex
+        flex-direction: column
+        padding: 15px 100px 15px 15px
+        .notTitle
+            color: $white
+        a
+            color: $purple
+    .close
+        top: 0px
+        right: 3px
+        background: $neutrals2
+        color: $purple
+        display: flex
+        position: absolute
+        cursor: pointer
+        padding: 3px

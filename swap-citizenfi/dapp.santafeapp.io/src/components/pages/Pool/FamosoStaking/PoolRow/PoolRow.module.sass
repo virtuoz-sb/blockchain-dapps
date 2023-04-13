@@ -1,0 +1,252 @@
+@import ../../../../../styles/helpers
+
+.pool_row
+    font-family: PointCufon
+    flex: 0 0 50%
+    background: var(--btn-back-dark)
+    border-radius: 12px
+    margin-bottom: 10px
+    &.active
+        .head
+            border-bottom-left-radius: 0
+            border-bottom-right-radius: 0
+            box-shadow: none
+            .downIcon
+                transform: translateY(-50%) rotate(-180deg)
+                +m
+                    transform: rotate(-180deg)
+        .body
+            display: flex
+            +m
+                flex-direction: column
+
+.head
+    margin-bottom: 40px
+    position: relative
+    margin-bottom: 0
+    display: flex
+    cursor: pointer
+    padding: 16px 24px
+    border-radius: 12px
+    // border-bottom: 2px solid rgb(56, 50, 65)
+    box-shadow: 0 0 20px #0002
+    +hairline-2
+    +body-bold-2
+    +m
+        flex-direction: column
+    svg
+        margin: auto 12px
+        fill: $neutrals4
+        transition: transform .2s
+        &.downIcon
+            margin: auto 32px
+    .title
+        display: flex
+        width: 200px
+        min-width: 200px
+        .logoImg
+            width: 60px
+            height: 32px
+            position: relative
+            +m
+                width: 50px
+            img
+                border-radius: 50%
+                width: 32px
+                height: 32px
+                &:first-child
+                    position: absolute
+                    top: 0
+                    left: 0
+                    +m
+                        width: 24px
+                        height: 24px
+                &:last-child
+                    position: absolute
+                    top: 0
+                    left: 20px
+                    +m
+                        width: 24px
+                        height: 24px
+                        left: 15px
+            &.single
+                display: flex
+                img
+                    left: 50%
+                    transform: translateX(-50%)
+
+        .poolName
+            white-space: nowrap
+            margin: auto 0
+            padding-right: 50px
+            font-size: 14px
+            font-weight: 900
+    .cols
+        display: flex
+        width: -webkit-fill-available
+        +m
+            margin-top: 10px
+        .col
+            display: flex
+            flex-direction: column
+            margin-top: auto
+            margin-bottom: auto 
+            width: calc(100% / 3)
+            text-align: center
+            +m
+                text-align: left
+        .detail
+            display: flex
+            +m
+                position: absolute
+                top: 20px
+                right: 15px
+            svg
+                display: inline!important
+                margin: auto 5px
+                font-weight: 400
+                height: 12px
+                fill: var(--orange)
+
+            div
+                text-align: left
+                &:first-child
+                    font-size: 12px
+                    color: $neutrals4
+                    text-transform: none
+                &:last-child
+                    font-size: 14px
+                    text-transform: none
+
+.body
+    // display: flex
+    // flex-direction: column
+    // align-items: flex-start
+    display: none
+    padding: 16px 24px
+    background: $neutrals1
+    +light
+        background: $neutrals6
+    .links
+        display: flex
+        flex-direction: column
+        padding-right: 80px
+        margin: auto 0
+        +m
+            order: 1
+            padding-right: 0
+            margin-top: 20px
+        a
+            color: var(--orange)
+            font-weight: 600
+            white-space: nowrap
+            font-size: 13px
+            svg
+                fill: var(--orange)
+                margin-left: 5px
+            &:hover
+                text-decoration: underline
+        .core
+            margin-top: 15px
+            -webkit-box-align: center
+            width: fit-content
+            align-items: center
+            border-radius: 16px
+            display: inline-flex
+            font-weight: 400
+            white-space: nowrap
+            height: 24px
+            padding: 0px 8px
+            font-size: 14px
+            color: $neutrals6
+            background: rgb(8, 6, 11)
+            border: 2px solid $neutrals6
+            svg
+                fill: $neutrals6
+                margin-right: 5px
+            span
+                font-size: 11px
+    .actions
+        display: flex
+        width: -webkit-fill-available
+        +m
+            order: 0
+            flex-direction: column
+        .act_item
+            width: 47.5%
+            display: flex
+            flex-direction: column
+            border: 2px solid $neutrals3
+            border-radius: 12px
+            margin: auto
+            padding: 16px
+            +light
+                border-color: $neutrals5
+            +m
+                width: 100%
+            &:first-child
+                margin-right: 2.5%
+                +m
+                    margin: 5px auto
+            &:last-child
+                margin-left: 2.5%
+                +m
+                    margin: 8px auto
+            .title
+                width: 200px
+                display: flex
+                text-transform: uppercase
+                font-size: 12px
+                .rewardToken
+                    color: var(--orange)
+                    font-weight: 700
+                    margin-right: 10px
+            .contents
+                display: flex
+                span
+                    &.amount
+                        margin: auto auto auto 0
+                        font-size: 14px
+                        font-weight: 900
+                .btn
+                    background-color: rgb(60, 55, 66)
+                    border-color: rgb(60, 55, 66)
+                    box-shadow: none
+                    color: rgb(102, 97, 113)
+                    cursor: not-allowed
+                    border-radius: 12px
+                    padding: 8px 12px 6.2px
+                    font-weight: 700
+                    img
+                        height: 8px
+                        margin: auto 12px
+                    &.active
+                        background: var(--orange)
+                        color: $neutrals8
+                        cursor: pointer
+                        &.disabled
+                            cursor: not-allowed
+                    &.one
+                        width: 100%
+                        text-align: center
+                        box-shadow: rgba(14, 14, 44, .40) 0px -1px 0px 0px inset
+                        color: $white
+                        cursor: pointer
+                        transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s
+                        &:hover
+                            opacity: .7
+                        &.enable
+                            background: transparent
+                            border: solid 2px var(--orange)
+                            color: var(--orange)
+
+
+.link
+    +button-2
+    color: $neutrals4
+    transition: color .2s
+    &:hover
+        color: $blue
+    &:not(:last-child)
+        margin-bottom: 24px
+

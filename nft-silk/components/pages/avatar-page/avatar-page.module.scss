@@ -1,0 +1,87 @@
+/* .background {
+  background-image: url(/images/road.svg), url(/images/thoroughbred.png), url(/images/honeycomb.svg);
+  background-position: left bottom, left 50px bottom 180px, left bottom;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: auto, 370px, auto;
+}
+
+.backdrop {
+  position: relative;
+}
+.backdrop::after {
+  content: '';
+  background-image: url(/images/road_horse.svg);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  width: 50vw;
+  min-width: 700px;
+  @media (min-width: 1537px) {
+    width: 60vw;
+    //min-width: 800px;
+  }
+  @media (max-width: 1280px) {
+    //width: 60vw;
+    min-width: 600px;
+  }
+}
+.comb {
+  position: relative;
+}
+.comb::before {
+  content: '';
+  background-image: url(/images/honeycomb.svg);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -2;
+  opacity: 0.5;
+} */
+
+.avatar {
+  z-index: -1;
+  left: calc(50% - 50vh);
+  top: calc(110% - 50vh);
+  scale: 250%;
+  @media (max-width: 640px) {
+    left: 0;
+    width: 100%;
+  }
+  &::after {
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+  }
+}
+
+.avatarSilkContent {
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  max-width: 400px;
+  position: absolute;
+  right: calc(50% - 50vh);
+  bottom: calc(67% - 50vh);
+
+  @media (max-height: 720px) {
+    max-width: 250px;
+  }
+}
+
+.avatarSilkContent::after {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}

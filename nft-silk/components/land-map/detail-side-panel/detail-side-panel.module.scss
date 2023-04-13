@@ -1,0 +1,26 @@
+.container {
+  @apply rounded-md;
+  position: fixed;
+  min-height: 505px;
+  margin-right: 16px;
+  overflow-y: auto;
+  right: -450px;
+  top: 80px;
+  width: 420px;
+  z-index: 30;
+
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+
+  &.open {
+    transform: translateX(-450px);
+  }
+
+  .title {
+    max-width: 90%;
+
+    &.farmTitle {
+      max-width: 63%;
+    }
+  }
+}

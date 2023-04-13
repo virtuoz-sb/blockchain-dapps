@@ -1,0 +1,53 @@
+@import ../../../../styles/helpers
+
+.blindFi
+    padding: 60px
+    margin: auto
+    max-width: 1024px
+    +m
+        padding: 60px 30px
+.title
+    font-size: 24px
+    font-weight: bold
+    margin: 20px auto 20px auto
+    text-align: center
+
+.drawBtn
+    width: 200px
+    margin: 20px auto
+.boxContents
+    margin-top: 50px
+    display: grid
+    grid-gap: 1.5rem
+    grid-template-columns: repeat(3, minmax(0px, 1fr))
+
+    +m
+        display: flex
+        flex-direction: column
+
+    .boxItem
+        display: flex
+        flex-direction: column
+        img
+            margin: 0 auto
+            height: 320px
+            width: 100%
+            filter: drop-shadow(0px 60px 250px rgba(0, 0, 0, 0.25))
+            border-radius: 5px
+            +m
+                height: 320px
+        .bottomContent
+            margin-top: 10px
+            background: #1f1d25
+            border-radius: 5px
+            padding: 12px 20px
+            height: 100%
+            display: inline-table
+            .subTitle
+                font-size: 18px
+                font-weight: 600
+            .desc
+                padding: 10px 0
+                line-height: 1.2
+                color: var(--pane_color)
+

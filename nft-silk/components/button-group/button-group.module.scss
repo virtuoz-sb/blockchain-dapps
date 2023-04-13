@@ -1,0 +1,208 @@
+.buttonGroup {
+  display: flex;
+  height: 40px;
+
+  .button {
+    background: var(--color-royal-blue);
+    border: 2px solid transparent;
+    color: var(--btn-text-color);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    padding: 0 15px;
+    justify-content: center;
+    text-transform: uppercase;
+    user-select: none;
+
+    &:hover:not(.selected) {
+      background: var(--color-primary-black);
+      border-color: var(--color-royal-blue);
+
+      &:after {
+        background: var(--color-primary-black);
+        border-top: 2px solid var(--color-royal-blue);
+      }
+
+      &:before {
+        background: var(--color-primary-black);
+        border-bottom: 2px solid var(--color-royal-blue);
+      }
+    }
+
+    &.selected {
+      border: 2px solid var(--color-light-gray);
+
+      &.first:after {
+        border-top: 2px solid var(--color-light-gray);
+      }
+
+      &.last:before {
+        border-bottom: 2px solid var(--color-light-gray);
+      }
+    }
+
+    &.two {
+      width: 50%;
+
+      &.first {
+        background: var(--color-dark-gray);
+
+        &:after {
+          background: var(--color-dark-gray);
+          transform: skew(-30deg);
+          right: -5px;
+          z-index: 1;
+        }
+
+        &:hover:not(.selected) {
+          background: var(--color-primary-black);
+          border-color: var(--color-dark-gray);
+
+          &:after {
+            background: var(--color-primary-black);
+            border-color: var(--color-dark-gray);
+          }
+        }
+      }
+
+      &.seperator {
+        width: 0;
+        padding-left: 0;
+        padding-right: 0;
+        border-right-width: 0;
+
+        &.borderLeft {
+          border-left: 2px solid var(--color-light-gray) !important;
+        }
+
+        &.borderRight {
+          border-left-width: 0;
+          border-right: 2px solid var(--color-light-gray) !important;
+        }
+      }
+
+      &.last {
+        &:before {
+          transform: skew(-30deg);
+          left: -5px;
+        }
+      }
+    }
+
+    &.three {
+      width: 33%;
+    }
+
+    &.four {
+      width: 25%;
+
+      &.middle {
+        &:nth-of-type(3) {
+          border-left: none;
+
+          &.borderLeft {
+            padding-left: 15px;
+          }
+
+          &.selected {
+            padding-left: 15px;
+          }
+        }
+      }
+
+      &.last {
+        background: var(--color-dark-gray);
+
+        &:before {
+          background: var(--color-dark-gray);
+        }
+      }
+    }
+
+    &.five {
+      width: 20%;
+
+      &.middle {
+        &:nth-of-type(3),
+        &:nth-of-type(4) {
+          border-left: none;
+
+          &.borderLeft {
+            padding-left: 15px;
+          }
+
+          &.selected {
+            padding-left: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  .first {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    position: relative;
+
+    &:after {
+      background: var(--color-royal-blue);
+      content: '';
+      position: absolute;
+      top: -2px;
+      right: -15px;
+      width: 15px;
+      height: 100%;
+    }
+  }
+
+  .last {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    position: relative;
+
+    &:before {
+      background: var(--color-royal-blue);
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: -15px;
+      width: 15px;
+      height: 100%;
+    }
+  }
+
+  .middle {
+    border-left: 2px solid var(--color-primary-black);
+    border-right: 2px solid var(--color-primary-black);
+    border-top-width: 0;
+    border-bottom-width: 0;
+    transform: skew(-30deg);
+    z-index: 2;
+
+    &:nth-of-type(even) {
+      background: var(--color-dark-gray);
+
+      &:hover:not(.selected) {
+        background: var(--color-primary-black);
+        border-color: var(--color-dark-gray);
+        border-top-width: 2px;
+        border-bottom-width: 2px;
+      }
+    }
+
+    &.borderLeft {
+      border-left-color: var(--color-light-gray);
+    }
+
+    &.borderRight {
+      border-right-color: var(--color-light-gray);
+    }
+
+    .text {
+      transform: skew(30deg);
+    }
+  }
+}

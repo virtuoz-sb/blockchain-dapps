@@ -1,0 +1,161 @@
+body {
+
+    --backgroundColor: #0e0e0e;
+    --black03: #00000030;
+    --white: white;
+    --green: #23c68b;
+    --fc-dark: #7e96b8;
+    --fc-dark-light: #273a55;
+    --orange: #bc4a31;
+    --c-pink: #d11fad;
+    --c-green: #0bbc01;
+    --c-red: #a0002a;
+    --c-yellow: #b59410;
+    --c-white: #ffffff;
+    --c-blue: #245ca0;
+
+    --light-white: rgb(227, 227, 227);
+
+    --hover-back-dark-hover: rgb(32, 34, 49);
+    --back-dark: rgba(46, 51, 72, 1);
+    --back-blue: #0f182a;
+    --back-blue1: #1c2d4a;
+    --back-blue-light: #4b607e1a;
+    --back-orange: #a14131;
+    --back-black: #040824;
+    --back-black1: #000;
+    --btn-back-dark: #161522;
+    --btn-back-blue: #0b0f31;
+    --btn-back-blue1: #202231;
+    --back-dark2: rgb(32, 34, 49);
+    --back-dark3: #0d0415;
+    --back-dark4: #1e1824;
+    --back-dark5: #131823;
+    --back-dark6: #212a3b;
+    --back-dark7: #060a10;
+    --back-dark7-8: #060a1080;
+    --back-dark8-active: #324054;
+
+    --root-back: #0e0e0e;
+    --root-section: #17161a;
+}
+
+body.light {
+
+
+    --backgroundColor: #f3f5fa;
+    --black03: #00000030;
+    --white: #0e0e0e;
+    --green: #23c68b;
+    --fc-dark: #7e96b8;
+    --fc-dark-light: #273a55;
+    --orange: #cf6c56;
+    --c-pink: #d11fad;
+    --c-green: #0bbc01;
+    --c-red: #a0002a;
+    --c-yellow: #b59410;
+    --c-white: #ffffff;
+    --c-blue: #245ca0;
+
+    --light-white: rgb(227, 227, 227);
+
+    --hover-back-dark-hover: rgb(203, 204, 209);
+    --back-dark: rgba(60, 64, 78, 1);
+    --back-blue: #0f182a;
+    --back-blue1: #1c2d4a;
+    --back-blue-light: #4b607e1a;
+    --back-orange: #a14131;
+    --back-black: #040824;
+    --back-black1: rgb(255, 255, 255);
+    --btn-back-dark: #fff;
+    --btn-back-blue: #0b0f31;
+    --btn-back-blue1: #aeaeb1;
+    --back-dark2: rgb(32, 34, 49);
+    --back-dark3: #e9e7eb;
+    --back-dark4: #1e1824;
+    --back-dark5: #131823;
+    --back-dark6: #212a3b;
+    --back-dark7: #dae4f5;
+    --back-dark7-8: #9fa1a580;
+    --back-dark8-active: #324054;
+
+    --root-back: #0e0e0e;
+    --root-section: #17161a;
+
+    color: var(--white);
+    font-weight: bold;
+
+    img.light-dark {
+        filter: invert(1);
+    }
+
+    img.light-svg-dark{
+        filter: brightness(0) sepia(1) hue-rotate(140deg) saturate(6);
+    }
+
+    a,
+    a:hover {
+        color: var(--white);
+    }
+
+    input {
+        font-weight: bold;
+
+        &:placehodler {
+            font-weight: bold;
+        }
+
+        &.border-gradient {
+
+            &:focus,
+            &:hover {
+                outline: none;
+                border: 1px double transparent !important;
+                background-image: linear-gradient(rgb(255, 255, 255), rgb(194, 194, 197)), radial-gradient(circle at left top, #0b0f31, var(--orange)) !important;
+                background-origin: border-box !important;
+                background-clip: padding-box, border-box !important;
+            }
+        }
+    }
+
+    .border-gradient.border-show,
+    .border-gradient.active,
+    .border-gradient:focus,
+    .border-gradient:active,
+    .border-gradient:hover {
+        border: 1px double transparent !important;
+        background-image: linear-gradient(rgb(255, 255, 255), rgb(194, 194, 197)), radial-gradient(circle at left top, #0b0f31, #bc4a31) !important;
+        background-origin: border-box !important;
+        background-clip: padding-box, border-box !important;
+    }
+
+    .bd-shiny{
+        // box-shadow: #e4e4e6a0 5px 5px 20px -15px, #f3f4f6a0 -5px -5px 20px -5px;
+        // box-shadow: inset 0 0 20px #ccc;
+        box-shadow: -6px -5px 13px rgba(255,255,255,.4), 5px 6px 13px #e2e2e2;
+        position: relative;
+    
+        &.dot::before{
+          position: absolute;
+          top : 50%;
+          left: 0;
+          content: "";
+          transform: translate(20px, -50%);
+          width : 15px;
+          height: 15px;
+          border-radius: 50%;
+          background: linear-gradient(to bottom, #e1e1e6, #fff);
+          // box-shadow: inset 0 0 #e1e1e6, inset 5px 5px 5px #ffffff10;
+        }
+    
+        &:hover, &.active, &.on{
+        //   box-shadow: inset #e4e4e6a0 5px 5px 20px -15px, inset #f3f4f6a0 -5px -5px 20px -5px;
+            box-shadow: 0 0 20px #ccc;
+        }
+        &.dot:hover, &.dot.active{
+            &::before{
+                background: var(--orange);
+            }
+        }
+      }
+}

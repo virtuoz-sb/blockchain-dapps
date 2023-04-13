@@ -1,0 +1,705 @@
+{
+  "common": {
+    "of": "of",
+    "ownedBy": "Owned by",
+    "filters": {
+      "title": "filter",
+      "clear": "clear",
+      "search": "search"
+    },
+    "mobile": "Please visit the portal on a larger device for a better experience."
+  },
+
+  "header": {
+    "buttons": {
+      "home": "Home",
+      "avatars": "Avatars",
+      "map": "Map",
+      "stable": "Stable",
+      "marketplace": "Marketplace",
+      "metaverse": "Enter Metaverse"
+    },
+    "navigation": {
+      "registration": "Registration",
+      "redemptions": "Redemptions",
+      "profile": "Profile",
+      "settings": "Settings"
+    },
+    "wallet": {
+      "off": "off",
+      "on": "on",
+      "inGameToken": "Crypto",
+      "nft": "NFTs",
+      "disconnect": "DISCONNECT",
+      "confirmDisconnect": "Are you sure you want to disconnect your wallet?",
+      "currency": {
+        "slk": "SLK",
+        "stt": "STT",
+        "usd": "USD"
+      }
+    },
+    "notifications": {
+      "title": "Notifications",
+      "markAllRead": "Mark all as Read",
+      "noMessages": {
+        "title": "No Unread Notifications",
+        "description": "Congrats! You have read all<br />notifications."
+      }
+    }
+  },
+
+  "socialMediaAndTermsPolicy": {
+    "terms": "TERMS",
+    "policy": "POLICY",
+    "support": "SUPPORT"
+  },
+
+  "home": {
+    "title": "Welcome to the Game of Silks. Own Your Dynasty!",
+    "title_disconnected": "Welcome to the Game of Silks. Own Your Dynasty!",
+    "title_not_registered": "Your Wallet Is Now Connected!",
+    "subtitle": "20,000 U.S. Thoroughbred Racehorses are born each year. Their Owners compete annually for over $1 billion in Prize Purses.",
+    "complete_registration": "COMPLETE REGISTRATION"
+  },
+
+  "notifications": {
+    "title": "notifications"
+  },
+
+  "profile": {
+    "title": "REGISTER",
+    "newRegistration": "BEGIN REGISTRATION",
+    "updateRegistration": "CONFIRM REGISTRATION",
+    "backToProfile": "CHANGE EMAIL",
+    "goToProfileSettings": "GO TO PROFILE",
+    "resend": "RESEND VERIFICATION EMAIL",
+    "info": "Your profile details will be used to keep in touch with you for<br />Silks updates.",
+    "emailSent": "A verification link has been sent to your email address. In 24hrs the verification link will expire and you will need to request a new link.",
+    "verify": {
+      "title": "Verify your email address",
+      "description": "A verification link has been sent to your email address. In <strong>24hrs</strong> the verification link will expire and you will need to request a new link. "
+    },
+    "verified": {
+      "title": "Success! Your email address has been verified",
+      "description": "Your account can now receive email notifications. Please be sure to whitelist emails from silks.io so that they appear in your inbox."
+    },
+    "alreadyVerified": {
+      "title": "YOUR EMAIL IS ALREADY VERIFIED!",
+      "description": "There is no need to re-verify your email address."
+    },
+    "error": {
+      "title": "Error! Please Verify Your Email.",
+      "description": "The verification link sent to your email address has expired. To try again, click <strong>Resend Verification Email</strong> below to have the link sent to {{email}}. If you would like to change the email address, click <strong>Change Email</strong> and update the form with your desired email address."
+    }
+  },
+
+  "settings": {
+    "title": "Settings",
+    "info": "Your profile details will be used to keep In touch with you for Silks updates.",
+    "profile": {
+      "tab": "PROFILE",
+      "title": "PROFILE",
+      "subtitle": "Your notifications will be sent to the email destinations that you have provided and confirmed below.",
+      "primaryAvatarSelection": "Primary Avatar Selection",
+      "dynastyNameLabelEmpty": "Choose Your Dynasty Name",
+      "dynastyNameLabel": "Dynasty Name",
+      "usernameLabel": "Username",
+      "locationLabel": "Location",
+      "aboutLabel": "About me",
+      "updateButton": "UPDATE",
+      "errors": {
+        "dynastyNameExists": "Sorry. This Dynasty name is already taken.",
+        "dynastyNameMin": "Please enter at least 3 characters.",
+        "dynastyNameMax": "Sorry. You have exceeded the allowed max 25-character limit."
+      }
+    },
+    "contactDetails": {
+      "tab": "CONTACT DETAILS",
+      "title": "CONTACT DETAILS",
+      "subtitle": "Your notifications will be sent to the email destinations that you have provided and confirmed below.",
+      "emailLabel": "Enter your Email",
+      "walletAddressLabel": "Wallet Address",
+      "updateButton": "UPDATE"
+    },
+    "notifications": {
+      "tab": "NOTIFICATIONS",
+      "title": "NOTIFICATIONS SETTINGS",
+      "subtitle": "We may still send you important notifications about your account outside of your notification settings.",
+      "horseWinningLabel": "Horse Winnings (Launches Soon!)",
+      "horseWinningDescription": "These are notifications that are received as a result of your horse or stable having a winning result.",
+      "marketplaceLabel": "Marketplace Requests",
+      "marketplaceDescription": "These are notifications that are received as a result of any requests that might come through the system from another member in the marketplace.",
+      "updateButton": "UPDATE",
+      "email": "Email",
+      "sms": "SMS",
+      "comingSoon": "Coming soon"
+    }
+  },
+
+  "landMap": {
+    "map": {
+      "navigation": {
+        "title": "Navigation"
+      },
+      "legend": {
+        "title": "Legend",
+        "assets": "Your Assets",
+        "items": {
+          "contiguousLand": "Contiguous land",
+          "land": "1 Acre Land",
+          "unmintedLand": "Un-Minted Land",
+          "ownedLand": "Owned Land",
+          "privateFarm": "Private Farm",
+          "publicFarm": "Public Farm",
+          "allItems": "All Items",
+          "myAssets": "My Assets"
+        },
+        "button": "CONNECT WALLET"
+      }
+    },
+    "filters": {
+      "acres": "acres",
+      "noResults": {
+        "title": "No results",
+        "description": "Please clear your search and try again."
+      },
+      "acreLand": {
+        "title": "1 acre land",
+        "tooltip": "1 acre land tooltip",
+        "all": "All",
+        "forSale": "For Sale"
+      },
+      "farms": {
+        "title": "farms",
+        "tooltip": "farms tooltip",
+        "buttons": {
+          "private": "private",
+          "public": "public"
+        },
+        "all": "all",
+        "forSale": "For Sale",
+        "vacant": "Vacant",
+        "vacantTooltip": "Vacant tooltip",
+        "farmSizeTitle": "Farm Size (Acres)"
+      },
+      "dam": {
+        "title": "dam",
+        "tooltip": "Dam tooltip",
+        "placeholder": "EX: Name of the mother"
+      },
+      "coordinates": {
+        "title": "coordinates",
+        "tooltip": "Coordinates tooltip",
+        "placeholderMin": "Min (X,Y)",
+        "placeholderMax": "Max (X,Y)"
+      },
+      "wallet": {
+        "title": "wallet",
+        "tooltip": "Wallet tooltip",
+        "placeholder": "EX: 0x774897ehr08hsj09js0",
+        "buttons": {
+          "land": "land",
+          "farm": "farm",
+          "horse": "horse"
+        }
+      }
+    }
+  },
+
+  "land": { "region": "Region", "backToMap": "Back to Map" },
+  "farm": { "viewAcres": "View Acres", "private": "Private", "public": "Public", "openSlots": "open slots" },
+  "landUnitDetail": {
+    "backToMap": "< Back to Map",
+    "ownedBy": "Owned by",
+    "landMeasure": "ACRE LAND",
+    "currentPrice": "CURRENT PRICE",
+    "region": "Region",
+    "private": "Private",
+    "public": "Public",
+    "unlisted": "NOT LISTED",
+    "developFarm": "DEVELOP INTO FARM",
+    "buyNow": "BUY NOW",
+    "aboutLand": "ABOUT LAND",
+    "defaultLandTitle": "1 Acre Land",
+    "defaultFarmTitle": "Acre Farm"
+  },
+
+  "farmDevelopment": {
+    "title": "Farm Development",
+    "acreFarm": "Acre Farm",
+    "acresFarm": "Acres Farm",
+    "region": "Region:",
+    "skyFalls": "Sky Falls",
+    "inputs": {
+      "destablingFee": "De-Stabling Fee",
+      "name": "Name your Farm",
+      "selectStable": "Select Stable",
+      "stablingPeriod": "Period in Months",
+      "stablingFee": "Stabling Fee"
+    },
+    "help": {
+      "length": "Farm name may not exceed 32 characters ",
+      "special": "Farm name cannot use special characters",
+      "months": "months"
+    },
+    "stablingPeriod": "Stabling Period",
+    "ownerFee": "Owner Fee",
+    "allowDestabling": "Allow De-Stabling",
+    "buttons": {
+      "back": "BACK",
+      "cancel": "CANCEL",
+      "close": "CLOSE",
+      "next": "NEXT",
+      "develop": "DEVELOP"
+    },
+    "submitted": {
+      "title": "SUBMITTED",
+      "description": "Your transaction has been submitted. There will be one more wallet approval needed. Once approved, please allow time for your transaction to be completely processed and to be reflected in the portal."
+    },
+    "step": "Step"
+  },
+
+  "privateFarmDetail": {
+    "backToMap": "< Back to Map",
+    "ownedBy": "Owned by",
+    "landMeasure": "ACRE LAND",
+    "currentPrice": "CURRENT PRICE",
+    "openSlots": "open slots",
+    "requestToStake": "REQUEST TO STAKE",
+    "region": "Region",
+    "private": "Private"
+  },
+
+  "publicFarmDetail": {
+    "backToMap": "< Back to Map",
+    "ownedBy": "Owned by",
+    "landMeasure": "ACRE LAND",
+    "currentPrice": "CURRENT PRICE",
+    "openSlots": "open slots",
+    "requestToStake": "REQUEST TO STAKE",
+    "region": "Region",
+    "public": "Public"
+  },
+
+  "redemption": {
+    "title": "Redemption",
+    "redeem": {
+      "description": "Redeem Your Sky falls parcel(s).",
+      "subDescription": "Click on the info icon at the bottom of the page to learn more.",
+      "available": "Available",
+      "redeem": "Redeem",
+      "info": "Parcels will be redeemed in groups of 10 contiguous acres.",
+      "button": "Redeem",
+      "error": "There was an error initiating the transacation.  Please try again in a few minutes.",
+      "notification": {
+        "title": "Successfuly Redeemed",
+        "message": "A Request to redeem {{redeemCount}} sky fall piece(s) of land were submitted.  The transaction hash is {{hash}}"
+      }
+    },
+    "redeemed": {
+      "description": "Redemption In Progress...",
+      "subDescription": "The details of your redemption request can be seen below.",
+      "owned": "Skyfall Nfts Owned",
+      "redeemed": "Skyfall Nfts Being Redeemed",
+      "transacation": "Skyfall Transaction Hash",
+      "info": "Check the transaction hash above on Etherscan to track your<br />redemption progress",
+      "button": "Close"
+    },
+    "infoModal": {
+      "title": "Redeeming — Sky Falls<br />Genesis Parcels",
+      "description": "Each Sky Falls Genesis Parcel is redeemable for one acre of land in the Sky Falls region. Each acre will have coordinates on the map, and have respective properties and rarities associated with core land gameplay.<br /><br />The purpose of the floating acres are the contiguous benefits associated with the land. Sky Falls Parcel owners will be able to redeem up-to 10 parcels at a time, resulting in the minting of 10 contiguous acres in the Sky Falls Region.<br /><br />The act of Redemption is an act of Creation.<br /><br />The Genesis Avatar holders will be responsible for the creation of the first 10k acres in the Silks Metaverse. As each Sky Falls Genesis Parcel is redeemed the floating acres will fall from the sky resulting in the minting of new land and the formation of a contiguous landscape.",
+      "button": "Close"
+    }
+  },
+  "avatar": {
+    "testSilk": {
+      "title": "TEST SILKS ON THOROUGHBRED",
+      "subtitle": "What do the silks look like on the blinkers and blanket",
+      "button": "VIEW SILKS"
+    },
+    "3DButtonLabel": "Click to View the Avatar in 3D",
+    "noAvatar": {
+      "title": "There are no Avatars in your wallet",
+      "subtitle": "Go to our Marketplace and purchase your first Avatar, and let the race begin!",
+      "button": "Buy Avatar Now"
+    },
+    "notFound": {
+      "title": "We couldn't find this avatar",
+      "subtitle": "20,000 U.S. Thoroughbred Racehorses are born each year. Their Owners compete annually for over $1 billion in Prize Purses.",
+      "button": "GO BACK TO MARKETPLACE"
+    },
+    "disconnected": {
+      "title": "Welcome to the Game of Silks. Own Your Dynasty!",
+      "subtitle": "20,000 U.S. Thoroughbred Racehorses are born each year. Their Owners compete annually for over $1 billion in Prize Purses."
+    },
+    "carouselLabel": "Your other avatars",
+    "setAsPrimary": "SET AS PRIMARY",
+    "primary": "PRIMARY"
+  },
+  "horse": {
+    "carouselLabel": "Your other horses",
+    "carouselLabelListMyHorses":  "List of My Horses",
+    "farm": "Farm",
+    "communityFarm": "Community Farm",
+    "partnership": "Partnership",
+    "governance": "Governance",
+    "learnMore": "Learn More",
+    "noHorse": {
+      "title": "You do not own a Yearling!",
+      "subtitle": "Go to our Marketplace and purchase your first Yearling, and let the race begin!",
+      "button": "GO TO MARKETPLACE"
+    },
+    "notFound": {
+      "title": "We couldn't find this yearling",
+      "subtitle": "20,000 U.S. Thoroughbred Racehorses are born each year. Their Owners compete annually for over $1 billion in Prize Purses.",
+      "button": "GO BACK TO MARKETPLACE"
+    },
+    "disconnected": {
+      "title": "Welcome to the Game of Silks. Own Your Dynasty!",
+      "subtitle": "20,000 U.S. Thoroughbred Racehorses are born each year. Their Owners compete annually for over $1 billion in Prize Purses."
+    }
+  },
+  "details": {
+    "backToMarketplace": "Back to Marketplace",
+    "currentPrice": "CURRENT PRICE",
+    "notForSale": "Not for sale",
+    "buyNow": "BUY NOW",
+    "makeOffer": "MAKE OFFER",
+    "offers": "OFFERS",
+    "sell": "SELL",
+    "properties": "PROPERTIES",
+    "stable": "STABLE",
+    "coordinates": {
+      "tabTitle": "COORDINATES",
+      "title": "Land Coordinates"
+    },
+    "you": "You",
+    "carouselLabel": "Your other NFTs",
+    "cancelListing": "CANCEL LISTING",
+    "syndicate": "SYNDICATE",
+    "syndicateListing": "LISTING",
+    "reconstitute": "RECONSTITUTE",
+    "stableRequests": "REQUESTS",
+    "buyOnOpenSea": "Buy on Opensea"
+  },
+  "syndicateListing": {
+    "price": "Price",
+    "usdPrice": "USD Price",
+    "quantity": "Quantity",
+    "expiration": "Expiration",
+    "from": "From",
+    "cancel": "CANCEL",
+    "buy": "BUY",
+    "noListings": "No listings"
+  },
+  "syndicate": {
+    "owner": "Owner",
+    "tokenType": "Token Type",
+    "Share": "Share"
+  },
+  "offers": {
+    "price": "Price",
+    "quantity": "Quantity",
+    "usdPrice": "USD Price",
+    "floorDifference": "Floor Difference",
+    "expiration": "Expiration",
+    "from": "From",
+    "below": "below",
+    "above": "above",
+    "accept": "ACCEPT",
+    "decline": "DECLINE",
+    "noOffers": "No Offers"
+  },
+  "stakedHorses": {
+    "stall": "Stall",
+    "horseName": "Horse Name",
+    "usdPrice": "USD Price",
+    "dam": "Dam of Horse",
+    "notListed": "Not Listed",
+    "auctionPrice": "Auction Price"
+  },
+  "stableRequests": {
+    "expiry": "Expiry Date",
+    "horseName": "Horse Name",
+    "from": "From"
+  },
+  "3dmodal": { "viewTheSilks": "View the silks", "viewIn3D": "View in 3D" },
+  "admin": {
+    "title": "Admin Portal",
+    "login": {
+      "signin": "Sign In to Admin Portal"
+    },
+    "changePassword": {
+      "title": "Change Password",
+      "success": {
+        "title": "Password Updated",
+        "msg": "Your password has been updated. Please re-sign in with new password to complete the update.",
+        "button": "Sign In"
+      },
+      "form": {
+        "existing": "Existing password",
+        "new": "New password",
+        "button": "Change Password"
+      },
+      "errors": {
+        "required": "Please enter existing password",
+        "min": "8 characters minimum",
+        "unique": "Passwords must be unique",
+        "newRequired": "Please enter new password"
+      },
+      "validators": {
+        "newPassword_required": "Please enter new password",
+        "newPassword_length": "8 characters minimum",
+        "newPassword_number": "One number",
+        "newPassword_lowercase": "One lowercase letter",
+        "newPassword_uppercase": "One uppercase letter",
+        "newPassword_special": "One special character",
+        "newPassword_spaces": "No spaces"
+      }
+    },
+    "portalUsers": {
+      "title": "Portal Users",
+      "clear": "clear",
+      "search": "Username, Wallet...",
+      "page": "Page",
+      "goto": "Go to page",
+      "show": "Show",
+      "status": {
+        "suspended": "Suspended",
+        "active": "Active"
+      },
+      "actions": {
+        "suspend": "Suspend",
+        "reactivate": "Reactivate",
+        "confirm": "User Activation"
+      },
+      "columns": {
+        "username": "Username",
+        "walletAddress": "Wallet",
+        "email": "Email",
+        "isActive": "Status",
+        "action": "Action"
+      }
+    }
+  },
+  "horselist": {
+    "community": "Community",
+    "actions": {
+      "stable": "Stable Horse",
+      "stableTitle": "Your Horses"
+    },
+    "columns": {
+      "tokenId": "ID",
+      "name": "Name",
+      "imageThumbnail": " ",
+      "sex": "Sex",
+      "sireName": "Sire",
+      "damName": "Dam",
+      "damSireName": "Dam Sire",
+      "auctionPrice": "Auction Price",
+      "farmName": "Farm",
+      "action": "Learn More"
+    }
+  },
+  "horseaction": {
+    "success": "Success",
+    "horse": "Horse",
+    "farm": "Farm",
+    "region": "Region",
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "terms": "Stabling Terms",
+    "period": "Stabling Period",
+    "full": "Full Length",
+    "stableFee": "Stabling Fee",
+    "deStableFee": "De-Stabling Fee",
+    "initializing": "Initializing...",
+    "processing": "Processing...",
+
+    "stable": {
+      "action": "Stable Horse",
+      "title": "Select Horse to Stable",
+      "submitted": "Your transaction has been submitted. Please allow time for your horse move to be completely processed and to be reflected in the portal.",
+      "isStabled": "is stabled at",
+      "ownerNofee": "The above fees do not apply to you as long as you are the owner of the farm."
+    },
+    "stableOwned": {
+      "action": "Stable Horse",
+      "title": "Select Horse to Stable",
+      "confirm": "Stable Horse",
+      "success": "Success",
+      "submitted": "Your transaction has been submitted. Please allow time for your horse move to be completely processed and to be reflected in the portal.",
+      "isStabled": "is stabled at",
+      "ownerNofee": "The above fees do not apply to you as long as you are the owner of the farm.",
+      "confirmError": "Problem with Stabling confirmation",
+      "initError": "Problem initializing Farm information"
+    },
+    "stableUser": {
+      "action": "Stable Request",
+      "title": "Select Horse to Stable",
+      "confirm": "Stable Request",
+      "success": "Request Sent",
+      "submitted": "The farm owner must review and act on your request.",
+      "confirmError": "Problem with Stable Request confirmation",
+      "initError": "Problem initializing Farm information"
+    },
+    "cancelStableUser": {
+      "action": "Cancel Request",
+      "title": "Select Horse to Cancel",
+      "confirm": "Cancel Request",
+      "success": "Request Cancelled",
+      "submitted": "Your request to stable “{{horseName}}” has been cancelled.",
+      "confirmError": "Problem encountered Cancelling Stable Request"
+    },
+    "deStableOwned": {
+      "action": "De-Stable Horse",
+      "title": "Select Horse to De-Stable",
+      "confirm": "De-Stable",
+      "confirmMsg": "Are you sure?",
+      "success": "Success",
+      "submitted": "Your de-stabling request has been submitted. Please allow time for this to reflect in the portal.",
+      "confirmError": "Problem with De-Stabling confirmation"
+    },
+    "deStableUser": {
+      "action": "De-Stable Horse",
+      "title": "Select Horse to De-Stable",
+      "confirm": "De-Stable",
+      "confirmMsg": "Are you sure? You will be charged with the de-stabling fee listed above.",
+      "success": "Success",
+      "submitted": "Your de-stabling request has been submitted. Please allow time for this to reflect in the portal.",
+      "confirmError": "Problem with De-Stable Request confirmation",
+      "initError": "Problem initializing Farm information"
+    },
+    "acceptStableRequest": {
+      "action": "Accept",
+      "title": "",
+      "confirm": "Accept Request",
+      "confirmMsg": "Are you sure you want to accept the stable request?",
+      "success": "Accepted",
+      "submitted": "You have accepted a request to Stable.",
+      "confirmError": "Problem encountered Accepting Stable Request",
+      "stableFull": "Your stable is currently full. To Accept additional requests, a horse would need to be de-stabled."
+    },
+    "declineStableRequest": {
+      "action": "Decline",
+      "title": "",
+      "confirm": "Decline Request",
+      "success": "Declined",
+      "submitted": "You have declined a request to Stable.",
+      "confirmError": "Problem encountered Declining Stable Request"
+    }
+  },
+  "table": {
+    "of": "of",
+    "pagination": {
+      "page": "Page",
+      "goto": "Go to page",
+      "show": "Show",
+      "showing": "Showing",
+      "of": "of"
+    }
+  },
+
+  "marketplaceModals": {
+    "error": {
+      "title": "OOPS! SOMETHING IS WRONG",
+      "subTitle": "Your transaction was unsuccessful.",
+      "message": "Please refer to your wallet`s activity log to help troubleshoot."
+    }
+  },
+
+  "syndicateModal": {
+    "successTitle": "SUCCESS",
+    "successMessage": "Your syndication transaction has been submitted. Please allow time for your shares to be completely processed and to be reflected in the portal.",
+    "title": "CONFIRM SYNDICATION",
+    "item": "ITEM",
+    "total": "TOTAL",
+    "shares": "10 SHARES",
+    "information": "Split: 1 Governance Token & 9 Partnership Tokens",
+    "approvaInProgress": "Pending approval in progress",
+    "confirmSyndication": "CONFIRM SYNDICATION"
+  },
+
+  "sellModal": {
+    "unitPrice": "Unit Price",
+    "quantity": "Quantity",
+    "duration": "Duration",
+    "title": "LIST ITEM FOR SALE",
+    "type": "Type",
+    "fixedPrice": "Fixed Price",
+    "serviceFees": "Services Fees",
+    "creatorFees": "Creator Fees",
+    "totalPrice": "Total Price",
+    "approvaInProgress": "Pending approval in progress",
+    "completeListing": "Complete Listing",
+    "preview": "PREVIEW"
+  },
+
+  "cancelMarketplaceItemModal": {
+    "title": "Cancel listing?",
+    "description": "This will cancel your listing.",
+    "confirm": "You will be asked to confirm this cancellation from your wallet.",
+    "buttons": {
+      "back": "BACK",
+      "continue": "CONTINUE"
+    }
+  },
+
+  "syndicateReconstitutionModal": {
+    "errorTitleNftIsForSale": "OOPS! SOMETHING IS WRONG",
+    "errorSubTitleNftIsForSale": "This NFT has an active listing.",
+    "errorMessageNftIsForSale": "To reconstitute this NFT, please cancel all associated listings. Please allow time for your cancelation to complete and reflect in the portal. You may need to refresh the page to see transaction updates.",
+    "successTitle": "SUCCESS",
+    "successMessage": "Your reconstitution transaction has been submitted. Please allow time for your merge to be completely processed and to be reflected in the portal.",
+    "title": "CONFIRM RECONSTITUTION",
+    "item": "ITEM",
+    "information": "Merging: 1 Governance Token with 9 Partnership Tokens",
+    "approvaInProgress": "Pending approval in progress",
+    "confirmReconstitution": "CONFIRM RECONSTITUTION"
+  },
+
+  "makeOfferModal": {
+    "title": "MAKE AN OFFER",
+    "item": "ITEM",
+    "floorPrice": "FLOOR PRICE",
+    "unitPrice": "Unit Price",
+    "quantity": "Quantity",
+    "offerExpiration": "Offer Expiration",
+    "yourBalance": "Your Balance",
+    "totalPrice": "Total Price",
+    "makeOffer": "MAKE OFFER",
+    "ownedTitle": "YOU ALREADY OWN THIS NFT",
+    "ownedMessage": "Aren't you lucky?!",
+    "successTitle": "SUCCESS",
+    "successMessage": "Your offer has been sent. Please allow time for the owner to Accept or Decline."
+  },
+
+  "acceptOfferModal": {
+    "successTitle": "SUCCESS",
+    "successMessage": "You accepted the offer. Please allow time for this to reflect in the portal.",
+    "title": "ACCEPT THIS OFFER",
+    "from": "from",
+    "item": "item",
+    "subtotal": "SUBTOTAL",
+    "quantity": "Quantity",
+    "totalEarnings": "TOTAL EARNINGS",
+    "accept": "ACCEPT",
+    "approvalTitle": "Item has a pending transaction.",
+    "approvalMessage": "Your purchase may fail. Gas fees still apply."
+  },
+
+  "declineOfferModal": {
+    "title": "DECLINE THIS OFFER",
+    "decline": "DECLINE"
+  },
+
+  "nft-carousel-v2": {
+    "primary": "PRIMARY",
+    "more": "MORE"
+  },
+
+  "marketplace": {
+    "seeMore": "SEE MORE",
+    "seeLess": "SEE LESS"
+  }
+}

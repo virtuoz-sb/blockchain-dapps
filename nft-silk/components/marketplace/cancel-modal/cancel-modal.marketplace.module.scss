@@ -1,0 +1,30 @@
+.title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 0px 5px 10px rgba(255, 255, 255, 0.2);
+}
+
+.hr {
+  // border-top-color: var(--color-royal-white);
+  border-top-color: rgba(227, 233, 244, 0.1);
+  margin: 30px 0;
+  width: 100%;
+}
+
+.description {
+  @apply flex flex-col justify-center items-center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 15px 0 0;
+
+  .confirm {
+    color: var(--color-light-gray);
+    font-weight: 300;
+    text-align: center;
+    width: 90%;
+  }
+}

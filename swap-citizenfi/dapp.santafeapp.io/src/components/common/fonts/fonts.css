@@ -1,0 +1,40 @@
+/* @font-face {
+    font-family: "Blackoak Std";
+    src: url("./BlackoakStd.otf")   format('truetype');
+}
+
+@font-face{
+    font-family: "Berlin Sans FB Demi";
+    src: url("./BRLNSDB.TTF")   format('truetype');
+} */
+
+
+@font-face{
+    font-family: DmSans;
+    src: url("./DmSans/dm-sans-latin-400-normal.9566aaac.woff2")   format('truetype'), url("./DmSans/dm-sans-latin-700-normal.65910454.woff2")   format('truetype');
+}
+
+@font-face{
+    font-family: PointCufon;
+    src: url("./point-cufonfonts/PointBold.otf")   format('opentype');
+}
+
+@font-face{
+    font-family: BaronNeue;
+    src: url("./BaronNeue/baron-neue.regular.otf")   format('opentype');
+}
+
+.font-DmSans{
+    font-family: DmSans!important;
+}
+
+.font-baron{
+    font-family: BaronNeue!important;
+}
+.ff-point-cufon{
+    font-family: PointCufon;
+}
+
+.ff-sans{
+    font-family: sans-serif;
+}

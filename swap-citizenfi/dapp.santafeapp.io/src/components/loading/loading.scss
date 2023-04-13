@@ -1,0 +1,246 @@
+html{
+    background-color:#000!important;
+  }
+body{
+    margin: 0px!important;
+}
+.dapp-page-loading {
+    // height: 100vh;
+    // width: 100vw;
+    display: block;
+    background-color: #000 !important;
+    // background: radial-gradient(#050526 0%, black 90%) 0 0 no-repeat black !important;
+    margin:0;
+    padding:0;
+    // width:100vw;
+    // height:100vh;
+    position:absolute;  
+    perspective: 340px;
+    height: calc(100% - 16px);
+    width: calc(100% - 16px);
+    overflow: hidden;
+
+    .content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .loader-animation{
+            // border-color: rgba($color: #fff, $alpha: .2);
+            // border-top: 3px solid rgba($color: #fff, $alpha: .6);
+            // margin: auto;
+            display: block;
+            position: relative;
+            width:  60px!important;
+            height: 60px!important;
+            // margin: -30px 0 0 -30px;
+            border-radius: 50%!important;
+            border: 3px solid transparent;
+            border-top-color: #bc4a31;
+            -webkit-animation: spin 2s linear infinite;
+            animation: spin 2s linear infinite;
+            &:before {
+                content: "";
+                position: absolute;
+                top:   5px;
+                left:  5px;
+                right: 5px;
+                bottom:5px;
+                border-radius: 50%;
+                border: 3px solid transparent;
+                border-top-color: #7c3e2f;
+                -webkit-animation: spin 3s linear infinite;
+                animation: spin 3s linear infinite;
+            }
+            &:after {
+                content: "";
+                position: absolute;
+                top:   15px;
+                left:  15px;
+                right: 15px;
+                bottom:15px;
+                border-radius: 50%;
+                border: 3px solid transparent;
+                border-top-color: #3f457c;
+                -webkit-animation: spin 1.5s linear infinite;
+                animation: spin 1.5s linear infinite;
+            }
+            @-webkit-keyframes spin {
+                0%   {
+                    -webkit-transform: rotate(0deg);
+                    -ms-transform: rotate(0deg);
+                    transform: rotate(0deg);
+                }
+                100% {
+                    -webkit-transform: rotate(360deg);
+                    -ms-transform: rotate(360deg);
+                    transform: rotate(360deg);
+                }
+            }
+            @keyframes spin {
+                0%   {
+                    -webkit-transform: rotate(0deg);
+                    -ms-transform: rotate(0deg);
+                    transform: rotate(0deg);
+                }
+                100% {
+                    -webkit-transform: rotate(360deg);
+                    -ms-transform: rotate(360deg);
+                    transform: rotate(360deg);
+                }
+            }
+        }
+
+        .loading-logo {
+            text-align: center;
+            width: 250px;
+            height: 87px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url(./site-logo.png);
+            margin-bottom: 30px;
+        }
+    
+        .loading-content {
+            $color: #bc4a31;
+            $size: 12px;
+            $time: 1;
+    
+            // width: 100vw;
+            // height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // background: #000;
+    
+    
+            .dank-ass-loader {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+    
+                .row {
+                    display: flex;
+                }
+            }
+    
+            .arrow {
+                width: 0;
+                height: 0;
+                margin: 0 (-$size / 2);
+                border-left: $size solid transparent;
+                border-right: $size solid transparent;
+                border-bottom: ($size * 1.8) solid $color;
+                animation: blink $time + s infinite;
+                filter: drop-shadow(0 0 ($size * 1.5) $color);
+    
+                &.down {
+                    transform: rotate(180deg);
+                }
+    
+                @for $i from 1 through 18 {
+                    &.outer-#{$i} {
+                        animation-delay: -($time / 18) * $i + s;
+                    }
+                }
+    
+                @for $i from 1 through 6 {
+                    &.inner-#{$i} {
+                        animation-delay: -($time / 6) * $i + s;
+                    }
+                }
+            }
+    
+            @keyframes blink {
+                0% {
+                    opacity: 0.1;
+                }
+    
+                30% {
+                    opacity: 1;
+                }
+    
+                100% {
+                    opacity: 0.1;
+                }
+            }
+    
+        }
+    }
+
+
+    // $stars: 350; // Number of start per layer
+    // $depth: 300; // Depth between star layers
+    // $speed: 10s; // Number of seconds to transition between layers
+    // $width: 3000; // Width of the starfield
+    // $height: 960; // Height of the starfield
+
+
+    // .stars {
+    //     position: absolute;
+    //     top: 50%;
+    //     left: 50%;
+    //     width: 2px;
+    //     height: 2px;
+    //     $box-shadow: ();
+
+    //     @for $i from 0 through $stars {
+    //         $box-shadow: $box-shadow, (random($width)-$width/2 + px) (random($height)-$height/2 + px) hsl(90, 0, 75+random(25));
+    //     }
+
+    //     box-shadow: $box-shadow;
+    //     animation: fly $speed linear infinite;
+    //     transform-style: preserve-3d;
+
+    //     &:before,
+    //     &:after {
+    //         content: "";
+    //         position: absolute;
+    //         width: inherit;
+    //         height: inherit;
+    //         box-shadow: inherit;
+    //     }
+
+    //     &:before {
+    //         transform: translateZ(-$depth + px);
+    //         animation: fade1 $speed linear infinite;
+    //     }
+
+    //     &:after {
+    //         transform: translateZ(-$depth * 2 + px);
+    //         animation: fade2 $speed linear infinite;
+    //     }
+
+        
+    //     @keyframes fly {
+    //         from {
+    //             transform: translateZ(0px);
+    //         }
+
+    //         to {
+    //             transform: translateZ($depth + px);
+    //         }
+    //     }
+
+    //     @keyframes fade1 {
+    //         from {
+    //             opacity: .5;
+    //         }
+
+    //         to {
+    //             opacity: 1;
+    //         }
+    //     }
+
+    //     @keyframes fade2 {
+    //         from {
+    //             opacity: 0;
+    //         }
+
+    //         to {
+    //             opacity: .5;
+    //         }
+    //     }
+    // }
+}

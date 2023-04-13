@@ -1,0 +1,21 @@
+.positionsTabWrapper {
+  height: calc(100vh - 510px);
+}
+
+.title {
+  color: var(--color-royal-white);
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.position {
+  border-radius: 15px;
+  border: 1px solid var(--tw-color-blue-600);
+  color: var(--color-light-gray);
+  display: flex;
+  height: 30px;
+  font-size: 12px;
+  padding: 5px 0 5px 12px;
+  width: 90px;
+}

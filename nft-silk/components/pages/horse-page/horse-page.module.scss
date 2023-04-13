@@ -1,0 +1,33 @@
+.horse {
+  left: calc(50% - 50vh);
+  height: 0;
+  @media (max-width: 640px) {
+    left: 0;
+    width: 100%;
+  }
+  &::after {
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+  }
+}
+
+.horseImage {
+  z-index: -1;
+  position: absolute;
+  margin: 10px auto;
+  max-height: calc(100vh - 16rem);
+  left: calc(65% - 50vh);
+  scale: 130%;
+
+  @media (max-height: 720px) {
+    left: calc(80% - 50vh);
+  }
+}
+
+.background {
+  background-image: url(/images/honeycomb.svg);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: auto;
+}

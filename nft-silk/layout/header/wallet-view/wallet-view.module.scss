@@ -1,0 +1,59 @@
+.popover {
+  position: absolute;
+  right: 0px;
+  top: 50px;
+  z-index: 40;
+  width: 336px;
+  //padding: 10px 0;
+}
+
+.popoverPanel {
+  @apply absolute z-10 rounded focus:outline-none w-full;
+  padding: 10px 16px 10px 10px;
+  background-color: var(--color-primary-black);
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(25px);
+}
+
+.optionTitle {
+  @apply font-medium text-white;
+  padding: 8px 0 0 10px;
+  user-select: none;
+  color: #BDC6D9;
+  //border-bottom: 1px solid #E3E9F41A;
+}
+
+.option {
+  //border-radius: 6px !important;
+  font-size: 16px;
+  font-weight: 700;
+  height: 50px;
+  text-transform: uppercase;
+  //background-color: var(--color-dark-gray);
+  padding-left: 24px;
+  padding-top: 5px;
+  //margin-top: 5px;
+  &:not(:first-of-type) {
+    border-bottom: 1px solid #E3E9F41A;
+  }
+}
+
+.tokenOption {
+  .title {
+    color: white;
+    // margin-bottom: 3px;
+  }
+
+  .text {
+    color: var(--color-light-gray);
+  }
+}
+
+.nftOption {
+  .title {
+    color: white;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+}

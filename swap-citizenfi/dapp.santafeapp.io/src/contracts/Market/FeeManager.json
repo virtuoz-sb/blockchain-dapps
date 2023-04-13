@@ -1,0 +1,1186 @@
+{
+  "contractName": "FeeManager",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "cutPerMillion",
+          "type": "uint256"
+        }
+      ],
+      "name": "ChangedFeePerMillion",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "cutPerMillion",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "maxCutPerMillion",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "renounceOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_cutPerMillion",
+          "type": "uint256"
+        }
+      ],
+      "name": "setOwnerCutPerMillion",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.7.4+commit.3f05b770\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"cutPerMillion\",\"type\":\"uint256\"}],\"name\":\"ChangedFeePerMillion\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"cutPerMillion\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"maxCutPerMillion\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_cutPerMillion\",\"type\":\"uint256\"}],\"name\":\"setOwnerCutPerMillion\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"owner()\":{\"details\":\"Returns the address of the current owner.\"},\"renounceOwnership()\":{\"details\":\"Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner.\"},\"transferOwnership(address)\":{\"details\":\"Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner.\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"setOwnerCutPerMillion(uint256)\":{\"notice\":\"Sets the share cut for the owner of the contract that's charged to the seller on a successful sale Share amount, from 0 to 99,999\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/src/contracts/FeeManager.sol\":\"FeeManager\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/access/Ownable.sol\":{\"keccak256\":\"0x126466a7effc83fa2075bb63433623781dfc38d2dd85c641a096f5587d6b7103\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://758be97dbc310a71c066490fc48c456ef12d930e1097d5d7eb8e17e94d5a19a2\",\"dweb:/ipfs/Qma5RFZQTJAxwsNqW6DV1z7AJE26qifCPm4PNqYhu5f8vZ\"]},\"@openzeppelin/contracts/utils/Context.sol\":{\"keccak256\":\"0xbc7f2f08b805e299fa2d5e702051171f670ded2808044dfeb6fab4357f167138\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://53f7f10bb120dca002788bc57a82cb2b17178312ed95c55a378a77f9a0803ee3\",\"dweb:/ipfs/QmYPMCJo9HA9WuvkTaCHJVGipyXNUr3skeEVSXj3QJgc8U\"]},\"project:/src/contracts/FeeManager.sol\":{\"keccak256\":\"0xfebbfa72822405674880f187833f412c473a7d4606e981b351595622c7c19704\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://306e4294b7b2869ca2f4b84bb88f65dbb00520eecea9402cf87b8f960fd794e4\",\"dweb:/ipfs/QmTBai5FcbAAXTYQoTduwyjuiyYidwj4h38q7QuZaZwSw9\"]}},\"version\":1}",
+  "bytecode": "0x60806040526161a860015534801561001657600080fd5b506000610021610070565b600080546001600160a01b0319166001600160a01b0383169081178255604051929350917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0908290a350610074565b3390565b61046e806100836000396000f3fe608060405234801561001057600080fd5b50600436106100625760003560e01c806319dad16d14610067578063673c855314610086578063715018a6146100a05780638da5cb5b146100a8578063c555e050146100cc578063f2fde38b146100d4575b600080fd5b6100846004803603602081101561007d57600080fd5b50356100fa565b005b61008e6101ea565b60408051918252519081900360200190f35b6100846101f0565b6100b06102ae565b604080516001600160a01b039092168252519081900360200190f35b61008e6102bd565b610084600480360360208110156100ea57600080fd5b50356001600160a01b03166102c4565b6101026103d8565b6001600160a01b03166101136102ae565b6001600160a01b03161461016e576040805162461bcd60e51b815260206004820181905260248201527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e6572604482015290519081900360640190fd5b620186a081106101af5760405162461bcd60e51b81526004018080602001828103825260368152602001806104036036913960400191505060405180910390fd5b60018190556040805182815290517fdb629698afb23c88e17ec4d29f97b3907c3e1fbfd116fa15f97569c7c16b3e4d9181900360200190a150565b60015481565b6101f86103d8565b6001600160a01b03166102096102ae565b6001600160a01b031614610264576040805162461bcd60e51b815260206004820181905260248201527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e6572604482015290519081900360640190fd5b600080546040516001600160a01b03909116907f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0908390a3600080546001600160a01b0319169055565b6000546001600160a01b031690565b620186a081565b6102cc6103d8565b6001600160a01b03166102dd6102ae565b6001600160a01b031614610338576040805162461bcd60e51b815260206004820181905260248201527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e6572604482015290519081900360640190fd5b6001600160a01b03811661037d5760405162461bcd60e51b81526004018080602001828103825260268152602001806103dd6026913960400191505060405180910390fd5b600080546040516001600160a01b03808516939216917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e091a3600080546001600160a01b0319166001600160a01b0392909216919091179055565b339056fe4f776e61626c653a206e6577206f776e657220697320746865207a65726f2061646472657373546865206f776e6572206375742073686f756c64206265206265747765656e203020616e64206d61784375745065724d696c6c696f6ea26469706673582212208c5b26c40751a2d33f345b75deb3d629caa720983e35b060ac39b13cd2d037c764736f6c63430007040033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100625760003560e01c806319dad16d14610067578063673c855314610086578063715018a6146100a05780638da5cb5b146100a8578063c555e050146100cc578063f2fde38b146100d4575b600080fd5b6100846004803603602081101561007d57600080fd5b50356100fa565b005b61008e6101ea565b60408051918252519081900360200190f35b6100846101f0565b6100b06102ae565b604080516001600160a01b039092168252519081900360200190f35b61008e6102bd565b610084600480360360208110156100ea57600080fd5b50356001600160a01b03166102c4565b6101026103d8565b6001600160a01b03166101136102ae565b6001600160a01b03161461016e576040805162461bcd60e51b815260206004820181905260248201527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e6572604482015290519081900360640190fd5b620186a081106101af5760405162461bcd60e51b81526004018080602001828103825260368152602001806104036036913960400191505060405180910390fd5b60018190556040805182815290517fdb629698afb23c88e17ec4d29f97b3907c3e1fbfd116fa15f97569c7c16b3e4d9181900360200190a150565b60015481565b6101f86103d8565b6001600160a01b03166102096102ae565b6001600160a01b031614610264576040805162461bcd60e51b815260206004820181905260248201527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e6572604482015290519081900360640190fd5b600080546040516001600160a01b03909116907f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0908390a3600080546001600160a01b0319169055565b6000546001600160a01b031690565b620186a081565b6102cc6103d8565b6001600160a01b03166102dd6102ae565b6001600160a01b031614610338576040805162461bcd60e51b815260206004820181905260248201527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e6572604482015290519081900360640190fd5b6001600160a01b03811661037d5760405162461bcd60e51b81526004018080602001828103825260268152602001806103dd6026913960400191505060405180910390fd5b600080546040516001600160a01b03808516939216917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e091a3600080546001600160a01b0319166001600160a01b0392909216919091179055565b339056fe4f776e61626c653a206e6577206f776e657220697320746865207a65726f2061646472657373546865206f776e6572206375742073686f756c64206265206265747765656e203020616e64206d61784375745065724d696c6c696f6ea26469706673582212208c5b26c40751a2d33f345b75deb3d629caa720983e35b060ac39b13cd2d037c764736f6c63430007040033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "127:744:22:-:0;;;282:5;251:36;;127:744;;;;;;;;;-1:-1:-1;910:17:0;930:12;:10;:12::i;:::-;953:6;:18;;-1:-1:-1;;;;;;953:18:0;-1:-1:-1;;;;;953:18:0;;;;;;;987:43;;953:18;;-1:-1:-1;953:18:0;987:43;;953:6;;987:43;875:163;127:744:22;;613:106:16;701:10;613:106;:::o;127:744:22:-;;;;;;;",
+  "deployedSourceMap": "127:744:22:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;544:324;;;;;;;;;;;;;;;;-1:-1:-1;544:324:22;;:::i;:::-;;251:36;;;:::i;:::-;;;;;;;;;;;;;;;;1770:148:0;;;:::i;1119:87::-;;;:::i;:::-;;;;-1:-1:-1;;;;;1119:87:0;;;;;;;;;;;;;;303:49:22;;;:::i;2073:244:0:-;;;;;;;;;;;;;;;;-1:-1:-1;2073:244:0;-1:-1:-1;;;;;2073:244:0;;:::i;544:324:22:-;1350:12:0;:10;:12::i;:::-;-1:-1:-1;;;;;1339:23:0;:7;:5;:7::i;:::-;-1:-1:-1;;;;;1339:23:0;;1331:68;;;;;-1:-1:-1;;;1331:68:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;346:6:22::1;651:14;:33;629:137;;;;-1:-1:-1::0;;;629:137:22::1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;779:13;:30:::0;;;825:35:::1;::::0;;;;;;;::::1;::::0;;;;::::1;::::0;;::::1;544:324:::0;:::o;251:36::-;;;;:::o;1770:148:0:-;1350:12;:10;:12::i;:::-;-1:-1:-1;;;;;1339:23:0;:7;:5;:7::i;:::-;-1:-1:-1;;;;;1339:23:0;;1331:68;;;;;-1:-1:-1;;;1331:68:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1877:1:::1;1861:6:::0;;1840:40:::1;::::0;-1:-1:-1;;;;;1861:6:0;;::::1;::::0;1840:40:::1;::::0;1877:1;;1840:40:::1;1908:1;1891:19:::0;;-1:-1:-1;;;;;;1891:19:0::1;::::0;;1770:148::o;1119:87::-;1165:7;1192:6;-1:-1:-1;;;;;1192:6:0;1119:87;:::o;303:49:22:-;346:6;303:49;:::o;2073:244:0:-;1350:12;:10;:12::i;:::-;-1:-1:-1;;;;;1339:23:0;:7;:5;:7::i;:::-;-1:-1:-1;;;;;1339:23:0;;1331:68;;;;;-1:-1:-1;;;1331:68:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;2162:22:0;::::1;2154:73;;;;-1:-1:-1::0;;;2154:73:0::1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2264:6;::::0;;2243:38:::1;::::0;-1:-1:-1;;;;;2243:38:0;;::::1;::::0;2264:6;::::1;::::0;2243:38:::1;::::0;::::1;2292:6;:17:::0;;-1:-1:-1;;;;;;2292:17:0::1;-1:-1:-1::0;;;;;2292:17:0;;;::::1;::::0;;;::::1;::::0;;2073:244::o;613:106:16:-;701:10;613:106;:::o",
+  "source": "// SPDX-License-Identifier: MIT\r\n\r\npragma solidity >=0.4.22 <0.9.0;\r\n\r\nimport \"@openzeppelin/contracts/access/Ownable.sol\";\r\n\r\ncontract FeeManager is Ownable {\r\n    event ChangedFeePerMillion(uint256 cutPerMillion);\r\n\r\n    // Market fee on sales\r\n    uint256 public cutPerMillion = 25000; //3% cut\r\n    uint256 public constant maxCutPerMillion = 100000; // 10% cut\r\n\r\n    /**\r\n     * Sets the share cut for the owner of the contract that's\r\n     * charged to the seller on a successful sale\r\n     * Share amount, from 0 to 99,999\r\n     */\r\n    function setOwnerCutPerMillion(uint256 _cutPerMillion) external onlyOwner {\r\n        require(\r\n            _cutPerMillion < maxCutPerMillion,\r\n            \"The owner cut should be between 0 and maxCutPerMillion\"\r\n        );\r\n\r\n        cutPerMillion = _cutPerMillion;\r\n        emit ChangedFeePerMillion(cutPerMillion);\r\n    }\r\n}\r\n",
+  "sourcePath": "F:\\SantaFeMarketPlace_2021_8_31\\src\\contracts\\FeeManager.sol",
+  "ast": {
+    "absolutePath": "project:/src/contracts/FeeManager.sol",
+    "exportedSymbols": {
+      "Context": [
+        3755
+      ],
+      "FeeManager": [
+        7284
+      ],
+      "Ownable": [
+        109
+      ]
+    },
+    "id": 7285,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 7246,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "35:32:22"
+      },
+      {
+        "absolutePath": "@openzeppelin/contracts/access/Ownable.sol",
+        "file": "@openzeppelin/contracts/access/Ownable.sol",
+        "id": 7247,
+        "nodeType": "ImportDirective",
+        "scope": 7285,
+        "sourceUnit": 110,
+        "src": "71:52:22",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 7248,
+              "name": "Ownable",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 109,
+              "src": "150:7:22",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Ownable_$109",
+                "typeString": "contract Ownable"
+              }
+            },
+            "id": 7249,
+            "nodeType": "InheritanceSpecifier",
+            "src": "150:7:22"
+          }
+        ],
+        "contractDependencies": [
+          109,
+          3755
+        ],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 7284,
+        "linearizedBaseContracts": [
+          7284,
+          109,
+          3755
+        ],
+        "name": "FeeManager",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "anonymous": false,
+            "id": 7253,
+            "name": "ChangedFeePerMillion",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 7252,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7251,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "cutPerMillion",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7253,
+                  "src": "192:21:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7250,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "192:7:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "191:23:22"
+            },
+            "src": "165:50:22"
+          },
+          {
+            "constant": false,
+            "functionSelector": "673c8553",
+            "id": 7256,
+            "mutability": "mutable",
+            "name": "cutPerMillion",
+            "nodeType": "VariableDeclaration",
+            "scope": 7284,
+            "src": "251:36:22",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 7254,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "251:7:22",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "hexValue": "3235303030",
+              "id": 7255,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "282:5:22",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_25000_by_1",
+                "typeString": "int_const 25000"
+              },
+              "value": "25000"
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": true,
+            "functionSelector": "c555e050",
+            "id": 7259,
+            "mutability": "constant",
+            "name": "maxCutPerMillion",
+            "nodeType": "VariableDeclaration",
+            "scope": 7284,
+            "src": "303:49:22",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 7257,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "303:7:22",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "hexValue": "313030303030",
+              "id": 7258,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "346:6:22",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_100000_by_1",
+                "typeString": "int_const 100000"
+              },
+              "value": "100000"
+            },
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 7282,
+              "nodeType": "Block",
+              "src": "618:250:22",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "commonType": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "id": 7270,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "id": 7268,
+                          "name": "_cutPerMillion",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 7262,
+                          "src": "651:14:22",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "<",
+                        "rightExpression": {
+                          "id": 7269,
+                          "name": "maxCutPerMillion",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 7259,
+                          "src": "668:16:22",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "src": "651:33:22",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "hexValue": "546865206f776e6572206375742073686f756c64206265206265747765656e203020616e64206d61784375745065724d696c6c696f6e",
+                        "id": 7271,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "699:56:22",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_eeb5ca759499663b486c395152ecc40cfe350ac6ea8a4743918c50224bf89cb2",
+                          "typeString": "literal_string \"The owner cut should be between 0 and maxCutPerMillion\""
+                        },
+                        "value": "The owner cut should be between 0 and maxCutPerMillion"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_eeb5ca759499663b486c395152ecc40cfe350ac6ea8a4743918c50224bf89cb2",
+                          "typeString": "literal_string \"The owner cut should be between 0 and maxCutPerMillion\""
+                        }
+                      ],
+                      "id": 7267,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        -18,
+                        -18
+                      ],
+                      "referencedDeclaration": -18,
+                      "src": "629:7:22",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 7272,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "629:137:22",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 7273,
+                  "nodeType": "ExpressionStatement",
+                  "src": "629:137:22"
+                },
+                {
+                  "expression": {
+                    "id": 7276,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 7274,
+                      "name": "cutPerMillion",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 7256,
+                      "src": "779:13:22",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 7275,
+                      "name": "_cutPerMillion",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 7262,
+                      "src": "795:14:22",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "779:30:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 7277,
+                  "nodeType": "ExpressionStatement",
+                  "src": "779:30:22"
+                },
+                {
+                  "eventCall": {
+                    "arguments": [
+                      {
+                        "id": 7279,
+                        "name": "cutPerMillion",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 7256,
+                        "src": "846:13:22",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "id": 7278,
+                      "name": "ChangedFeePerMillion",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 7253,
+                      "src": "825:20:22",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_uint256_$returns$__$",
+                        "typeString": "function (uint256)"
+                      }
+                    },
+                    "id": 7280,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "825:35:22",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 7281,
+                  "nodeType": "EmitStatement",
+                  "src": "820:40:22"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 7260,
+              "nodeType": "StructuredDocumentation",
+              "src": "372:166:22",
+              "text": " Sets the share cut for the owner of the contract that's\n charged to the seller on a successful sale\n Share amount, from 0 to 99,999"
+            },
+            "functionSelector": "19dad16d",
+            "id": 7283,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "id": 7265,
+                "modifierName": {
+                  "id": 7264,
+                  "name": "onlyOwner",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 58,
+                  "src": "608:9:22",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "608:9:22"
+              }
+            ],
+            "name": "setOwnerCutPerMillion",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7263,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7262,
+                  "mutability": "mutable",
+                  "name": "_cutPerMillion",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7283,
+                  "src": "575:22:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7261,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "575:7:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "574:24:22"
+            },
+            "returnParameters": {
+              "id": 7266,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "618:0:22"
+            },
+            "scope": 7284,
+            "src": "544:324:22",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 7285,
+        "src": "127:744:22"
+      }
+    ],
+    "src": "35:838:22"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/src/contracts/FeeManager.sol",
+      "exportedSymbols": {
+        "Context": [
+          3755
+        ],
+        "FeeManager": [
+          7284
+        ],
+        "Ownable": [
+          109
+        ]
+      },
+      "license": "MIT"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.4",
+            ".22",
+            "<",
+            "0.9",
+            ".0"
+          ]
+        },
+        "id": 7246,
+        "name": "PragmaDirective",
+        "src": "35:32:22"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 110,
+          "absolutePath": "@openzeppelin/contracts/access/Ownable.sol",
+          "file": "@openzeppelin/contracts/access/Ownable.sol",
+          "scope": 7285,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 7247,
+        "name": "ImportDirective",
+        "src": "71:52:22"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "contractDependencies": [
+            109,
+            3755
+          ],
+          "contractKind": "contract",
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            7284,
+            109,
+            3755
+          ],
+          "name": "FeeManager",
+          "scope": 7285
+        },
+        "children": [
+          {
+            "attributes": {},
+            "children": [
+              {
+                "attributes": {
+                  "name": "Ownable",
+                  "referencedDeclaration": 109,
+                  "type": "contract Ownable"
+                },
+                "id": 7248,
+                "name": "UserDefinedTypeName",
+                "src": "150:7:22"
+              }
+            ],
+            "id": 7249,
+            "name": "InheritanceSpecifier",
+            "src": "150:7:22"
+          },
+          {
+            "attributes": {
+              "anonymous": false,
+              "name": "ChangedFeePerMillion"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "indexed": false,
+                      "mutability": "mutable",
+                      "name": "cutPerMillion",
+                      "scope": 7253,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 7250,
+                        "name": "ElementaryTypeName",
+                        "src": "192:7:22"
+                      }
+                    ],
+                    "id": 7251,
+                    "name": "VariableDeclaration",
+                    "src": "192:21:22"
+                  }
+                ],
+                "id": 7252,
+                "name": "ParameterList",
+                "src": "191:23:22"
+              }
+            ],
+            "id": 7253,
+            "name": "EventDefinition",
+            "src": "165:50:22"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "673c8553",
+              "mutability": "mutable",
+              "name": "cutPerMillion",
+              "scope": 7284,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint256",
+                  "type": "uint256"
+                },
+                "id": 7254,
+                "name": "ElementaryTypeName",
+                "src": "251:7:22"
+              },
+              {
+                "attributes": {
+                  "hexvalue": "3235303030",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "token": "number",
+                  "type": "int_const 25000",
+                  "value": "25000"
+                },
+                "id": 7255,
+                "name": "Literal",
+                "src": "282:5:22"
+              }
+            ],
+            "id": 7256,
+            "name": "VariableDeclaration",
+            "src": "251:36:22"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "functionSelector": "c555e050",
+              "mutability": "constant",
+              "name": "maxCutPerMillion",
+              "scope": 7284,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint256",
+                  "type": "uint256"
+                },
+                "id": 7257,
+                "name": "ElementaryTypeName",
+                "src": "303:7:22"
+              },
+              {
+                "attributes": {
+                  "hexvalue": "313030303030",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "token": "number",
+                  "type": "int_const 100000",
+                  "value": "100000"
+                },
+                "id": 7258,
+                "name": "Literal",
+                "src": "346:6:22"
+              }
+            ],
+            "id": 7259,
+            "name": "VariableDeclaration",
+            "src": "303:49:22"
+          },
+          {
+            "attributes": {
+              "functionSelector": "19dad16d",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "name": "setOwnerCutPerMillion",
+              "scope": 7284,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": " Sets the share cut for the owner of the contract that's\n charged to the seller on a successful sale\n Share amount, from 0 to 99,999"
+                },
+                "id": 7260,
+                "name": "StructuredDocumentation",
+                "src": "372:166:22"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_cutPerMillion",
+                      "scope": 7283,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 7261,
+                        "name": "ElementaryTypeName",
+                        "src": "575:7:22"
+                      }
+                    ],
+                    "id": 7262,
+                    "name": "VariableDeclaration",
+                    "src": "575:22:22"
+                  }
+                ],
+                "id": 7263,
+                "name": "ParameterList",
+                "src": "574:24:22"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 7266,
+                "name": "ParameterList",
+                "src": "618:0:22"
+              },
+              {
+                "attributes": {},
+                "children": [
+                  {
+                    "attributes": {
+                      "overloadedDeclarations": [
+                        null
+                      ],
+                      "referencedDeclaration": 58,
+                      "type": "modifier ()",
+                      "value": "onlyOwner"
+                    },
+                    "id": 7264,
+                    "name": "Identifier",
+                    "src": "608:9:22"
+                  }
+                ],
+                "id": 7265,
+                "name": "ModifierInvocation",
+                "src": "608:9:22"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "tryCall": false,
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_bool",
+                                  "typeString": "bool"
+                                },
+                                {
+                                  "typeIdentifier": "t_stringliteral_eeb5ca759499663b486c395152ecc40cfe350ac6ea8a4743918c50224bf89cb2",
+                                  "typeString": "literal_string \"The owner cut should be between 0 and maxCutPerMillion\""
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                -18,
+                                -18
+                              ],
+                              "referencedDeclaration": -18,
+                              "type": "function (bool,string memory) pure",
+                              "value": "require"
+                            },
+                            "id": 7267,
+                            "name": "Identifier",
+                            "src": "629:7:22"
+                          },
+                          {
+                            "attributes": {
+                              "commonType": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              },
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "operator": "<",
+                              "type": "bool"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 7262,
+                                  "type": "uint256",
+                                  "value": "_cutPerMillion"
+                                },
+                                "id": 7268,
+                                "name": "Identifier",
+                                "src": "651:14:22"
+                              },
+                              {
+                                "attributes": {
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 7259,
+                                  "type": "uint256",
+                                  "value": "maxCutPerMillion"
+                                },
+                                "id": 7269,
+                                "name": "Identifier",
+                                "src": "668:16:22"
+                              }
+                            ],
+                            "id": 7270,
+                            "name": "BinaryOperation",
+                            "src": "651:33:22"
+                          },
+                          {
+                            "attributes": {
+                              "hexvalue": "546865206f776e6572206375742073686f756c64206265206265747765656e203020616e64206d61784375745065724d696c6c696f6e",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "token": "string",
+                              "type": "literal_string \"The owner cut should be between 0 and maxCutPerMillion\"",
+                              "value": "The owner cut should be between 0 and maxCutPerMillion"
+                            },
+                            "id": 7271,
+                            "name": "Literal",
+                            "src": "699:56:22"
+                          }
+                        ],
+                        "id": 7272,
+                        "name": "FunctionCall",
+                        "src": "629:137:22"
+                      }
+                    ],
+                    "id": 7273,
+                    "name": "ExpressionStatement",
+                    "src": "629:137:22"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 7256,
+                              "type": "uint256",
+                              "value": "cutPerMillion"
+                            },
+                            "id": 7274,
+                            "name": "Identifier",
+                            "src": "779:13:22"
+                          },
+                          {
+                            "attributes": {
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 7262,
+                              "type": "uint256",
+                              "value": "_cutPerMillion"
+                            },
+                            "id": 7275,
+                            "name": "Identifier",
+                            "src": "795:14:22"
+                          }
+                        ],
+                        "id": 7276,
+                        "name": "Assignment",
+                        "src": "779:30:22"
+                      }
+                    ],
+                    "id": 7277,
+                    "name": "ExpressionStatement",
+                    "src": "779:30:22"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "tryCall": false,
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 7253,
+                              "type": "function (uint256)",
+                              "value": "ChangedFeePerMillion"
+                            },
+                            "id": 7278,
+                            "name": "Identifier",
+                            "src": "825:20:22"
+                          },
+                          {
+                            "attributes": {
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 7256,
+                              "type": "uint256",
+                              "value": "cutPerMillion"
+                            },
+                            "id": 7279,
+                            "name": "Identifier",
+                            "src": "846:13:22"
+                          }
+                        ],
+                        "id": 7280,
+                        "name": "FunctionCall",
+                        "src": "825:35:22"
+                      }
+                    ],
+                    "id": 7281,
+                    "name": "EmitStatement",
+                    "src": "820:40:22"
+                  }
+                ],
+                "id": 7282,
+                "name": "Block",
+                "src": "618:250:22"
+              }
+            ],
+            "id": 7283,
+            "name": "FunctionDefinition",
+            "src": "544:324:22"
+          }
+        ],
+        "id": 7284,
+        "name": "ContractDefinition",
+        "src": "127:744:22"
+      }
+    ],
+    "id": 7285,
+    "name": "SourceUnit",
+    "src": "35:838:22"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.7.4+commit.3f05b770.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.2",
+  "updatedAt": "2021-08-31T01:01:59.523Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "owner()": {
+        "details": "Returns the address of the current owner."
+      },
+      "renounceOwnership()": {
+        "details": "Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner."
+      },
+      "transferOwnership(address)": {
+        "details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "setOwnerCutPerMillion(uint256)": {
+        "notice": "Sets the share cut for the owner of the contract that's charged to the seller on a successful sale Share amount, from 0 to 99,999"
+      }
+    },
+    "version": 1
+  }
+}

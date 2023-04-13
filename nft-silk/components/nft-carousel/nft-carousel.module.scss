@@ -1,0 +1,88 @@
+.nftCarousel {
+  -ms-overflow-style: 'none';
+  scrollbar-width: 'none';
+  &::-webkit-scrollbar {
+    display: 'none';
+  }
+
+  & > div {
+    border-width: 2px;
+    border-color: transparent;
+  }
+  .active {
+    @apply border-2 border-blue-500 relative;
+    border-radius: 0.125rem;
+    border-top-left-radius: 0rem;
+    &::after {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      background: var(--tw-color-blue);
+      padding: 0px 4px;
+      content: url("data:image/svg+xml,%3Csvg width='13' height='10' viewBox='0 0 13 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.27597 3.25246C9.03794 1.52271 10.4478 0.175296 10.5588 0.115C11.3605 -0.320409 12.2972 0.562195 11.9184 1.39606C11.8567 1.53196 10.841 2.55887 8.31528 5.03895C6.38087 6.93841 4.68949 8.58867 4.55668 8.70621C4.23252 8.99304 3.94978 9.06545 3.57715 8.95716C3.32606 8.88414 3.24219 8.8105 1.77842 7.37739C0.933988 6.55067 0.190242 5.78556 0.125673 5.67717C-0.139367 5.23228 0.0300159 4.6133 0.490877 4.34277C0.763759 4.18254 1.17851 4.16493 1.44054 4.30239C1.53094 4.34981 2.10563 4.88572 2.71765 5.49323L3.66181 6.43041C3.75677 6.52467 3.90849 6.52932 4.00904 6.44106C4.10728 6.3548 5.5774 4.91995 7.27597 3.25246Z' fill='white'/%3E%3C/svg%3E%0A");
+    }
+  }
+
+  .notched {
+    --notchSize: 20px;
+    clip-path: polygon(var(--notchSize) 0, 100% 0, 100% 100%, 0 100%, 0 var(--notchSize));
+  }
+}
+
+.loader,
+.loader:before,
+.loader:after {
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation: load7 1.8s infinite ease-in-out;
+  animation: load7 1.8s infinite ease-in-out;
+}
+.loader {
+  color: #ffffff;
+  font-size: 10px;
+  margin: 80px auto;
+  position: relative;
+  text-indent: -9999em;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+.loader:before,
+.loader:after {
+  content: '';
+  position: absolute;
+  top: 0;
+}
+.loader:before {
+  left: -3.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.loader:after {
+  left: 3.5em;
+}
+@-webkit-keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}
+@keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}

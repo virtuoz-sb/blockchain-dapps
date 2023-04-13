@@ -1,0 +1,41 @@
+@import ../../../../../../styles/helpers
+
+.supplyStake
+    .modal-content
+        max-width: 400px
+        margin-left: auto
+        margin-right: auto
+.range
+    margin-bottom: 24px
+    padding: 5px
+
+.scale
+    display: flex
+    justify-content: space-between
+    font-weight: 500
+
+.group
+    margin-bottom: 24px
+    padding: 24px 0
+    border-width: 1px 0
+    border-style: solid
+    border-color: $neutrals6
+    +dark
+        border-color: $neutrals3
+
+
+.label
+    margin-bottom: 12px
+    +hairline-2
+    color: $neutrals5
+
+.inputBox
+    .tokenLogo
+        border-radius: 50%
+        width: 32px
+        height: 32px
+        &:first-child
+            z-index: 0
+        &:last-child
+            z-index: 2
+            margin-left: -10px

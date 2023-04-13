@@ -1,0 +1,21 @@
+.wrapper {
+  background: linear-gradient(180deg, #211F34 0%, #1F4CA7 100%);
+}
+
+.headerAccent {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  height: 147px;
+  top: 64px;
+  //bottom: 66.94%;
+  background: linear-gradient(180deg, rgba(32, 31, 51, 0) 0%, #191828 100%);
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.background {
+  background-image: url(/images/honeycomb.svg);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: auto;
+}

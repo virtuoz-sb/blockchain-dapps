@@ -1,0 +1,144 @@
+@import ../../../../../styles/helpers
+
+.liquidity_row
+    font-family: PointCufon
+    flex: 0 0 50%
+    background: var(--btn-back-dark)
+    border-radius: 12px
+    margin: 5px 10px
+    &.active
+        .head
+            border-bottom-left-radius: 0
+            border-bottom-right-radius: 0
+            box-shadow: none
+            .downIcon
+                transform: rotate(-180deg)
+                +m
+                    transform: rotate(-180deg)
+        .body
+            display: flex
+            flex-direction: column
+
+.head
+    margin-bottom: 40px
+    position: relative
+    margin-bottom: 0
+    display: flex
+    cursor: pointer
+    padding: 5px 12px
+    border-radius: 12px
+    // border-bottom: 2px solid rgb(56, 50, 65)
+    box-shadow: 0 0 20px #0002
+    +hairline-2
+    +body-bold-2
+    +m
+        flex-direction: column
+    svg
+        margin: auto 12px
+        fill: $neutrals4
+        transition: transform .2s
+        &.downIcon
+            margin: auto 0 auto auto
+    .title
+        display: flex
+        flex-direction: column
+        width: 100%
+        .topTitle
+            width: 100%
+            display: flex
+            .logoImg
+                margin-top: auto
+                margin-bottom: auto
+                display: flex
+                width: 60px
+                height: 32px
+                +m
+                    width: 50px
+                position: relative
+                img
+                    border-radius: 50%
+                    width: 24px
+                    height: 24px
+                    margin-top: 4px
+                    &:first-child
+                        position: absolute
+                        top: 0
+                        left: 0
+                    &:last-child
+                        position: absolute
+                        top: 0
+                        left: 20px
+                        +m
+                            width: 24px
+                            height: 24px
+                            left: 15px
+
+            .poolName
+                white-space: nowrap
+                margin: auto 0
+                padding-right: 50px
+                font-size: 14px
+                font-weight: 900
+        .amount
+            margin-left: 0
+            text-align: left
+            font-size: 12px
+            margin-top: 3px
+    .cols
+        justify-content: space-between
+        display: flex
+        width: -webkit-fill-available
+        +m
+            margin-top: 10px
+        .col
+            display: flex
+            flex-direction: column
+            margin-top: auto
+            margin-bottom: auto 
+            svg
+                transform: translateY(-2px)
+                margin-top: 0
+                +m
+                    display: none
+            &.detail
+                display: flex
+                +m
+                    flex-direction: row
+                    svg
+                        display: inline!important
+                        margin: 0 5px!important
+                        font-weight: 400
+                        height: 12px
+                        fill: var(--orange)
+
+.body
+    // display: flex
+    // flex-direction: column
+    // align-items: flex-start
+    display: none
+    padding: 16px 24px
+    background: $neutrals1
+    +light
+        background: $neutrals6
+    .row
+        margin: 3px 0
+        display: flex
+        *
+            margin-top: auto
+            margin-bottom: auto
+        img
+            width: 24px
+            height: 24px
+            border-radius: 50%
+        .title
+            margin-right: auto
+            margin-left: 5px
+        .desc
+            margin-left: auto
+            margin-right: 0
+    .removeBtn
+        background: var(--orange)
+        padding: 7px 20px
+        border-radius: 12px
+        cursor: pointer
+   

@@ -1,0 +1,13 @@
+.notched {
+  --notchSize: 12%;
+  clip-path: polygon(
+    var(--notchSize) 0,
+    100% 0,
+    100% 100%,
+    0 100%,
+    0 var(--notchSize)
+  ); // top-left corner notch removed for now because of the border issue
+
+  --border-color: rgb(59 130 246);
+  --border-width: 4px;
+}

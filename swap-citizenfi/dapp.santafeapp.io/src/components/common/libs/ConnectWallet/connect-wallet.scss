@@ -1,0 +1,12 @@
+.modal-dialog-wallet-connect{
+    .modal-content{
+        border: none;
+        background: none;
+        border-radius: 6.25rem;
+
+        .modal-body{
+            max-height: calc(100vh - 20px)!important;
+            overflow-y: auto;
+        }
+    }
+}

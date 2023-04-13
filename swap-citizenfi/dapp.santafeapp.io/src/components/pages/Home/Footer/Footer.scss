@@ -1,0 +1,27 @@
+.page-footer{
+    background: rgb(14, 14, 14)!important;
+    display: flex;
+    flex-direction: column;
+    .copyright{
+        width: 100%;
+        text-align: center;
+        max-width: 1280px;
+        padding: 20px 0;
+        border-top: solid 1px #fff2;
+        display: flex;
+        margin: auto;
+        .content-row{
+            display: flex;
+            margin: auto;
+            img{
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                margin: auto 10px;
+            }
+            div{
+                margin: auto 0;
+            }
+        }
+    }
+}

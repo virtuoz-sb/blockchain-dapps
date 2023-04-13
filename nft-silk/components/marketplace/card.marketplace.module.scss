@@ -1,0 +1,65 @@
+.notched {
+  --notchSize: 8%;
+  // clip-path: polygon(var(--notchSize) 0, 100% 0, 100% 100%, 0 100%, 0 var(--notchSize)); // top-left corner notch removed for now because of the border issue
+
+  --border-color: rgb(59 130 246);
+  --border-width: 4px;
+
+  &.btnBuyNowHoverActive {
+    border-radius: 0.6rem;
+    border-color: var(--border-color);
+    border-width: var(--border-width);
+  }
+}
+
+.notched:hover {
+  border-radius: 0.6rem;
+  border-color: var(--border-color);
+  border-width: var(--border-width);
+}
+
+.btnBuyNow {
+  color: white;
+  font-size: small;
+  font-weight: 500;
+  border-radius: 0.25rem;
+  justify-content: center;
+  width: 6rem;
+  height: 1.5rem;
+  background-color: #2e3d64;
+  --notchSizeBottomRight1: 15%;
+  --notchSizeBottomRight2: 10%;
+  --notchSizeTopLeft1: 40%;
+  --notchSizeTopLeft2: 10%;
+  clip-path: polygon(
+    0% var(--notchSizeTopLeft1),
+    var(--notchSizeTopLeft2) 0%,
+    100% 0%,
+    100% 0%,
+    100% calc(70% - var(--notchSizeBottomRight1)),
+    calc(100% - var(--notchSizeBottomRight2)) 100%,
+    0% 100%,
+    0% 100%
+  );
+  margin-left: 113px;
+
+  &.btnBuyNowHoverActive {
+    background-color: #4583ff;
+    width: 9rem;
+    height: 3rem;
+    margin-left: 69px;
+    color: white;
+    font-weight: 700;
+  }
+}
+
+.btnBuyNow:hover {
+  &.btnBuyNowHoverActive {
+    background-color: #4583ff;
+    color: yellow;
+    font-weight: 700;
+    width: 9rem;
+    height: 3rem;
+    margin-left: 69px;
+  }
+}

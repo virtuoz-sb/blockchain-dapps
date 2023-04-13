@@ -1,0 +1,133 @@
+{
+    "App" : {
+        "Home" : {
+            "staking"   : "Staking",
+            "farming"   : "Farming",
+            "lending"   : "Lending",
+            "market"    : "Market",
+            "my-asset"  : "My asset",
+            "EAO"       : "EAO",
+            "DAO"       : "DAO",
+            "cifi-powa" : "Cifi Powa",
+            "modal" : {
+                "comingcontent" : "Coming Soon."
+            },
+            "Footer" : {
+                "privacy_policy" : "Privacy Policy",
+                "terms_of_use"   : "Terms of Use"
+            }
+        },
+        "Farm" : {
+            "FarmYield" : {
+                "page_title" : "Stake LP token to earn CIFI",
+                "page_content" : "10% is deducted from every harvest to the Reward Pool"
+            }
+        },
+        "Market" : {
+            "Home" : {
+                "title" : "Citizen Fi Market Place",
+                "title_content" : "Traditional gaming gives you temporal ownership to your in-game assets, the moment you leave the game, asset's gone. CitizenFi gives players complete ownership of their in-game assets using blockchain technology. Every single item is a Non-Fungible Token (NFT) based on the Ethereum blockchain. You own one, it is permanently yours. You can sell it, gift it, stake it or use it as collateral."
+            }
+        }
+    },
+    "words" : {
+        "about"         : "About",
+        "about_more"    : "About More",
+        "all"           : "All",
+        "android"       : "Android",
+        "application"   : "Application",
+        "applications"  : "Applications",
+        "approve_cifi_busd_lp" : "Approve CIFI-BUSD LP",
+        "apy"           : "Apy",
+        "assets"        : "Assets",   
+        "bank"          : "Bank",
+        "bathukhan_pool": "Bathukhan Pool",
+        "cifi_busd_lp_stacked" : "CIFI-BUSD LP Stacked",
+        "cifi_earned"   : "CIFI Earned",
+        "cifipowa"     : "CifiPowa",
+        "ciphi"         : "Ciphi",
+        "ciphi_token"   : "CIFI Token",
+        "close"         : "Close",
+        "collateral"    : "Collateral",
+        "coming_soon"   : "Coming Soon",
+        "connect"       : "Connect",
+        "connect_wallet" : "Connect Wallet",
+        "core"          : "Core",
+        "dao"           : "DAO",
+        "dapp"          : "Dapp",
+        "dashboard"     : "Dashboard",
+        "deposit"       : "Deposit",
+        "disconnect_wallet" : "Disconnect Wallet",
+        "doc"           : "Doc",
+        "document"      : "Document",
+        "documentation" : "Documentation",
+        "download"      : "Download",
+        "earn"          : "Earn",
+        "explore"       : "Explore",
+        "explore_more"  : "Explore More",
+        "face_value"    : "Face value",
+        "faq"           : "Faq",
+        "farming"       : "Farming",
+        "farm_pool"     : "Farm Pool",
+        "harvest"       : "Harvest",
+        "home"          : "Home",
+        "ios"           : "iOS",
+        "join_whitelist": "Join Whitelist",
+        "key_feature"   : "Key Feature",
+        "latest_transaction" : "Latest Transaction",
+        "launch_app"    : "Launch App",
+        "leaf"          : "Leaf",
+        "learn_more"    : "Learn More",
+        "lending"       : "Lending",
+        "liquidation"   : "Liquidation",
+        "market_place"  : "Market Place",
+        "my_assets"     : "My assets",
+        "my_balance"    : "My Balance",
+        "play"          : "Play",
+        "play_for_free" : "Play For Free",
+        "pools"         : "Pools",
+        "price"         : "Price",
+        "profile"       : "Profile",
+        "purchase"      : "Purchase",
+        "quick_links"   : "Quick Links",
+        "rarefi"        : "RareFi",
+        "read_more"     : "Read More",
+        "resources"     : "Resources",
+        "rarity"        : "Rarity",
+        "santa_fe"      : "Santa Fe",
+        "select"        : "Select",
+        "search"        : "Search",
+        "skins"         : "Skins",
+        "stake"         : "Stake",
+        "staking"       : "Staking",
+        "staking_powa"  : "Staking Powa",
+        "steam"         : "Steam",
+        "subscribe"     : "Subscribe",
+        "support"       : "Support",
+        "swap"          : "Swap",
+        "textures"      : "Textures",
+        "token"         : "Token",
+        "total_apy"     : "Total Apy",
+        "total_powa"    : "Total Powa",
+        "total_value_locked"  : "Total Value Locked",
+        "trade"         : "Trade",
+        "true"          : "True",
+        "view_all"      : "View All",
+        "watch_trailer" : "Watch Trailer",
+        "weapons"       : "Weapons",
+        "weapon_stats"  : "Weapon Stats",
+        "welcome_to"    : "Welcome to",
+        "wrong_network" : "Wrong Network",
+        "wrong_network_" : "Wrong Network",
+        "yield_farming" : "Yield Farming",
+        "your_info"     : "Your Info"
+    },
+    "sentences" : {
+        "connect_wallet" : {
+            "connect"    : "Please connect wallet"   
+        }
+    },
+    "const" : {
+        "site_name"     : "Santa Fe"
+    }
+}

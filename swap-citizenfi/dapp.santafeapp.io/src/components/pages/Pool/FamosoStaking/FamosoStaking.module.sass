@@ -1,0 +1,44 @@
+@import ../../../../styles/helpers
+
+.stakingpool
+    position: relative
+    border-radius: 12px
+    padding-top: 0
+    overflow: hidden
+    padding-bottom: 20px
+    .bottom
+        padding-top: 20px
+        display: flex
+        .content
+            display: flex
+            margin: auto
+            cursor: pointer
+            &:hover
+                opacity: .7
+            svg
+                fill: $white
+                transform: rotate(-180deg)
+                margin: auto 5px
+                +light
+                    fill: #000
+    .topHead
+        display: flex
+        width: calc(100% - 40px)
+        +m
+            width: 100%
+        div
+            &:first-child
+                width: 200px
+                +m
+                    display: none
+            &:not(&:first-child)
+                width: calc((100% - 250px) / 3)
+                text-align: left
+                +m
+                    width: calc(100% / 3)
+                
+        +m
+            padding-left: 0
+        svg
+            fill: #7f7f7f
+            margin: auto 5px

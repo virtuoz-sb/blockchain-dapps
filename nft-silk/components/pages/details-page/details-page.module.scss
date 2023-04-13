@@ -1,0 +1,28 @@
+.pageDetail {
+  min-height: 100vh;
+  overflow: hidden;
+  padding-top: 4rem;
+
+  .leftSide {
+    height: auto;
+    width: calc(100vh - 4rem);
+    position: relative;
+    max-height: 100%;
+  }
+
+  .traits {
+    flex-grow: 100;
+    min-width: 45%;
+    @media (min-width: 640px) {
+      max-width: calc(100% - 100vh - 1rem);
+    }
+  }
+}
+
+.emptyProperty {
+  background: repeating-linear-gradient(-55deg, #3c4259, #3c4259 3px, transparent 3px, transparent 10px);
+}
+
+.propertyTabWrapper {
+  height: calc(100vh - 510px);
+}
