@@ -1,0 +1,115 @@
+/* Base code, only for html tags ---------------------
+ ----------------------------------------------------- */
+ * {
+  box-sizing: border-box;
+}
+
+*:focus, *:active { 
+  outline: none !important;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  font-size: 1rem;
+  background: radial-gradient(143.47% 143.47% at 50% 50%, rgba(4, 103, 119, 0.238) 0%, rgba(9, 60, 72, 0.116521) 32.9%, rgba(14, 19, 26, 0) 69.76%), linear-gradient(0deg, #0E131A, #0E131A), #0E131A;
+  -ms-overflow-style: none !important;  /* IE and Edge */
+  scrollbar-width: none !important;  /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none !important;
+}
+
+html,
+body {
+  @apply m-0 w-full h-full font-lato;
+}
+
+button {
+  @apply outline-none border-none select-none;
+}
+
+ul {
+  @apply m-0 p-0;
+  li {
+    list-style: none;
+  }
+}
+
+a,
+a:visited,
+a:hover,
+a:focus,
+a:active {
+  @apply no-underline;
+  &.underline:hover {
+    @apply underline;
+  }
+}
+
+a {
+  &:hover,
+  &:focus {
+    @apply no-underline;
+  }
+  &:focus {
+    @apply outline-none;
+  }
+}
+
+input:focus {
+  @apply outline-none;
+}
+
+label {
+  @apply block text-left m-0;
+}
+
+strong {
+  @apply font-bold;
+}
+
+img {
+  @apply max-w-full align-bottom;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply mt-0 font-normal leading-xl;
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+h6 {
+  font-size: 0.9rem;
+}
+
+p {
+  @apply m-0;
+}

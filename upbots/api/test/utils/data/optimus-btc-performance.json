@@ -1,0 +1,340 @@
+[
+    {
+        "openAt": "2020-11-23T23:00:00.000Z",
+        "openPeriod": {
+            "year": 2020,
+            "month": "November",
+            "week": 48,
+            "day": "2020-11-24"
+        },
+        "closeAt": "2020-11-25T23:00:00.000Z",
+        "closePeriod": {
+            "year": 2020,
+            "month": "November",
+            "week": 48,
+            "day": "2020-11-26"
+        },
+        "stratType": "LONG",
+        "result": "loss",
+        "measuredObject": "BOT",
+        "cycleSequence": 43,
+        "open": false,
+        "sbl": "BTCUSDT",
+        "exch": "theoretical",
+        "profitPercentage": -7.657208790056118,
+        "entryPrice": 19067,
+        "closePrice": 17607
+    },
+    {
+        "openAt": "2020-11-15T23:00:00.000Z",
+        "openPeriod": {
+            "year": 2020,
+            "month": "November",
+            "week": 47,
+            "day": "2020-11-16"
+        },
+        "closeAt": "2020-11-21T23:00:00.000Z",
+        "closePeriod": {
+            "year": 2020,
+            "month": "November",
+            "week": 48,
+            "day": "2020-11-22"
+        },
+        "stratType": "LONG",
+        "result": "win",
+        "measuredObject": "BOT",
+        "cycleSequence": 42,
+        "open": false,
+        "sbl": "BTCUSDT",
+        "exch": "theoretical",
+        "profitPercentage": 12.770416024653313,
+        "entryPrice": 16225,
+        "closePrice": 18297
+    },
+    {
+        "openAt": "2020-11-10T23:00:00.000Z",
+        "openPeriod": {
+            "year": 2020,
+            "month": "November",
+            "week": 46,
+            "day": "2020-11-11"
+        },
+        "closeAt": "2020-11-13T23:00:00.000Z",
+        "closePeriod": {
+            "year": 2020,
+            "month": "November",
+            "week": 46,
+            "day": "2020-11-14"
+        },
+        "stratType": "LONG",
+        "result": "win",
+        "measuredObject": "BOT",
+        "cycleSequence": 41,
+        "open": false,
+        "sbl": "BTCUSDT",
+        "exch": "theoretical",
+        "profitPercentage": 3.59600155783461,
+        "entryPrice": 15406,
+        "closePrice": 15960
+    },
+    {
+        "openAt": "2020-11-07T23:00:00.000Z",
+        "openPeriod": {
+            "year": 2020,
+            "month": "November",
+            "week": 46,
+            "day": "2020-11-08"
+        },
+        "closeAt": "2020-11-08T23:00:00.000Z",
+        "closePeriod": {
+            "year": 2020,
+            "month": "November",
+            "week": 46,
+            "day": "2020-11-09"
+        },
+        "stratType": "LONG",
+        "result": "win",
+        "measuredObject": "BOT",
+        "cycleSequence": 40,
+        "open": false,
+        "sbl": "BTCUSDT",
+        "exch": "theoretical",
+        "profitPercentage": 0.17609078458227354,
+        "entryPrice": 15333,
+        "closePrice": 15360
+    },
+    {
+        "openAt": "2020-11-02T23:00:00.000Z",
+        "openPeriod": {
+            "year": 2020,
+            "month": "November",
+            "week": 45,
+            "day": "2020-11-03"
+        },
+        "closeAt": "2020-11-06T23:00:00.000Z",
+        "closePeriod": {
+            "year": 2020,
+            "month": "November",
+            "week": 45,
+            "day": "2020-11-07"
+        },
+        "stratType": "LONG",
+        "result": "win",
+        "measuredObject": "BOT",
+        "cycleSequence": 39,
+        "open": false,
+        "sbl": "BTCUSDT",
+        "exch": "theoretical",
+        "profitPercentage": 6.638490126065729,
+        "entryPrice": 13723,
+        "closePrice": 14634
+    },
+    {
+        "openAt": "2020-10-29T23:00:00.000Z",
+        "openPeriod": {
+            "year": 2020,
+            "month": "October",
+            "week": 44,
+            "day": "2020-10-30"
+        },
+        "closeAt": "2020-11-01T23:00:00.000Z",
+        "closePeriod": {
+            "year": 2020,
+            "month": "November",
+            "week": 45,
+            "day": "2020-11-02"
+        },
+        "stratType": "LONG",
+        "result": "loss",
+        "measuredObject": "BOT",
+        "cycleSequence": 38,
+        "open": false,
+        "sbl": "BTCUSDT",
+        "exch": "theoretical",
+        "profitPercentage": -1.070189681895343,
+        "entryPrice": 13549,
+        "closePrice": 13404
+    },
+    {
+        "openAt": "2020-10-28T23:00:00.000Z",
+        "openPeriod": {
+            "year": 2020,
+            "month": "October",
+            "week": 44,
+            "day": "2020-10-29"
+        },
+        "closeAt": "2020-10-29T23:00:00.000Z",
+        "closePeriod": {
+            "year": 2020,
+            "month": "October",
+            "week": 44,
+            "day": "2020-10-30"
+        },
+        "stratType": "LONG",
+        "result": "loss",
+        "measuredObject": "BOT",
+        "cycleSequence": 37,
+        "open": false,
+        "sbl": "BTCUSDT",
+        "exch": "theoretical",
+        "profitPercentage": -2.0087465717886,
+        "entryPrice": 13491,
+        "closePrice": 13220
+    },
+    {
+        "openAt": "2020-10-26T23:00:00.000Z",
+        "openPeriod": {
+            "year": 2020,
+            "month": "October",
+            "week": 44,
+            "day": "2020-10-27"
+        },
+        "closeAt": "2020-10-27T23:00:00.000Z",
+        "closePeriod": {
+            "year": 2020,
+            "month": "October",
+            "week": 44,
+            "day": "2020-10-28"
+        },
+        "stratType": "LONG",
+        "result": "win",
+        "measuredObject": "BOT",
+        "cycleSequence": 36,
+        "open": false,
+        "sbl": "BTCUSDT",
+        "exch": "theoretical",
+        "profitPercentage": 1.0906298003072197,
+        "entryPrice": 13020,
+        "closePrice": 13162
+    },
+    {
+        "openAt": "2020-10-25T23:00:00.000Z",
+        "openPeriod": {
+            "year": 2020,
+            "month": "October",
+            "week": 44,
+            "day": "2020-10-26"
+        },
+        "closeAt": "2020-10-25T23:00:00.000Z",
+        "closePeriod": {
+            "year": 2020,
+            "month": "October",
+            "week": 44,
+            "day": "2020-10-26"
+        },
+        "stratType": "LONG",
+        "result": "loss",
+        "measuredObject": "BOT",
+        "cycleSequence": 35,
+        "open": false,
+        "sbl": "BTCUSDT",
+        "exch": "theoretical",
+        "profitPercentage": -0.19187965308158722,
+        "entryPrice": 13029,
+        "closePrice": 13004
+    },
+    {
+        "openAt": "2020-10-17T23:00:00.000Z",
+        "openPeriod": {
+            "year": 2020,
+            "month": "October",
+            "week": 43,
+            "day": "2020-10-18"
+        },
+        "closeAt": "2020-10-24T23:00:00.000Z",
+        "closePeriod": {
+            "year": 2020,
+            "month": "October",
+            "week": 44,
+            "day": "2020-10-25"
+        },
+        "stratType": "LONG",
+        "result": "win",
+        "measuredObject": "BOT",
+        "cycleSequence": 34,
+        "open": false,
+        "sbl": "BTCUSDT",
+        "exch": "theoretical",
+        "profitPercentage": 13.059799214316891,
+        "entryPrice": 11455,
+        "closePrice": 12951
+    },
+    {
+        "openAt": "2020-10-14T23:00:00.000Z",
+        "openPeriod": {
+            "year": 2020,
+            "month": "October",
+            "week": 42,
+            "day": "2020-10-15"
+        },
+        "closeAt": "2020-10-15T23:00:00.000Z",
+        "closePeriod": {
+            "year": 2020,
+            "month": "October",
+            "week": 42,
+            "day": "2020-10-16"
+        },
+        "stratType": "LONG",
+        "result": "loss",
+        "measuredObject": "BOT",
+        "cycleSequence": 33,
+        "open": false,
+        "sbl": "BTCUSDT",
+        "exch": "theoretical",
+        "profitPercentage": -1.3107638888888888,
+        "entryPrice": 11520,
+        "closePrice": 11369
+    },
+    {
+        "openAt": "2020-10-11T23:00:00.000Z",
+        "openPeriod": {
+            "year": 2020,
+            "month": "October",
+            "week": 42,
+            "day": "2020-10-12"
+        },
+        "closeAt": "2020-10-12T23:00:00.000Z",
+        "closePeriod": {
+            "year": 2020,
+            "month": "October",
+            "week": 42,
+            "day": "2020-10-13"
+        },
+        "stratType": "LONG",
+        "result": "loss",
+        "measuredObject": "BOT",
+        "cycleSequence": 32,
+        "open": false,
+        "sbl": "BTCUSDT",
+        "exch": "theoretical",
+        "profitPercentage": -1.4027188501168932,
+        "entryPrice": 11549,
+        "closePrice": 11387
+    },
+    {
+        "openAt": "2020-10-07T23:00:00.000Z",
+        "openPeriod": {
+            "year": 2020,
+            "month": "October",
+            "week": 41,
+            "day": "2020-10-08"
+        },
+        "closeAt": "2020-10-11T23:00:00.000Z",
+        "closePeriod": {
+            "year": 2020,
+            "month": "October",
+            "week": 42,
+            "day": "2020-10-12"
+        },
+        "stratType": "LONG",
+        "result": "win",
+        "measuredObject": "BOT",
+        "cycleSequence": 31,
+        "open": false,
+        "sbl": "BTCUSDT",
+        "exch": "theoretical",
+        "profitPercentage": 3.1938325991189425,
+        "entryPrice": 10896,
+        "closePrice": 11244
+    }
+]

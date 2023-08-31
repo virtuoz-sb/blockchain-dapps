@@ -1,0 +1,59 @@
+/* Label Style */
+.label {
+  &__colored {
+    background-blend-mode: overlay, normal;
+  }
+}
+
+/* Label Style */
+.point-gradient {
+  @apply relative pl-15;
+  &:before {
+    @apply absolute top-1/2 left-0 transform -translate-y-1/2 w-6 h-6 shadow-30 rounded-full;
+    content: '';
+    background: linear-gradient(224.51deg, rgba(255, 255, 255, 0.2) 15.01%, rgba(255, 255, 255, 0) 88.14%), #27ADC5;
+    background-blend-mode: overlay, normal;
+  }
+}
+
+/* Link Style */
+.link {
+  &:hover {
+    .link {
+      &__text,
+      &__icon {
+        @apply text-blue-cl-200;
+      }
+    }
+  }
+  &:active {
+    .link {
+      &__text,
+      &__icon {
+        @apply text-blue-cl-300;
+      }
+    }
+  }
+  &__icon {
+    filter: drop-shadow(0px 0px 10px rgba(74, 172, 179, 0.4));
+  }
+  &__text {
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+  }
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.custom-scrollbar::-webkit-scrollbar {
+  display: none !important;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.custom-scrollbar {
+  -ms-overflow-style: none !important;  /* IE and Edge */
+  scrollbar-width: none !important;  /* Firefox */
+  -ms-overflow-style: none !important;
+}
+.custom-blur-card{
+  -webkit-box-shadow: 0px 0px 10px -1px #42c0b7;
+  box-shadow: 0px 0px 10px -1px #42c0b7;
+}

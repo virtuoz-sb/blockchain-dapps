@@ -1,0 +1,61 @@
+
+.vue-tel-input.wrapper-inside {
+  border-radius: 5px;
+  border: none;
+  @apply bg-san-juan;
+  &:focus-within {
+    box-shadow: none;
+  }
+
+  &.disabled {
+    background-color: #292c34;
+    cursor: not-allowed;
+    .vti__dropdown {
+      cursor: not-allowed;
+      &:hover {
+        background-color: transparent;
+      }
+    }
+    .vti{
+      &__input {
+        background-color: #292d34;
+        &:hover {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+
+  .input-tel {
+    @apply text-iceberg bg-san-juan;
+  }
+
+  .vti {
+    &__dropdown {
+      border-radius: 5px 0 0 5px;
+      padding: 8px;
+      &:hover {
+        background-color: #316279;
+      }
+      &.open {
+        background: transparent;
+      }
+    }
+    &__input {
+      border-radius: 0 5px 5px 0;
+      border-left: 1px solid #868fa3;
+      &:hover {
+        background-color: #316279;
+      }
+    }
+  }
+}
+
+.vti__dropdown-list {
+  border: none !important;
+  @apply px-0 rounded-5 py-20 text-iceberg;
+  background-color: #214759 !important;
+  .highlighted {
+    background: #373c47 !important;
+  }
+}

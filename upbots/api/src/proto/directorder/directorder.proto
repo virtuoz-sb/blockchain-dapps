@@ -1,0 +1,43 @@
+syntax = "proto3";
+// import "google/protobuf/timestamp.proto";
+package directorder;
+
+enum SideType {
+    UNKNOWN_SIDE_TYPE = 0;
+    BUY = 1;
+    SELL = 2;
+}
+
+enum OrderType {
+    UNKNOWN_ORDER_TYPE = 0;
+    MARKET = 1;
+    LIMIT = 2;
+}
+
+message DirectOrderRequest {
+    string exchange = 1;
+    string symbol = 2;
+    SideType side= 3;
+    string userID = 4;      
+    string apiKeyID = 5;   
+    OrderType type = 6; 
+    double quantity =7;  
+    double price= 8;
+}
+
+message DirectOrderResponse {
+    string orderId = 1;
+}
+
+message DirectOrderCancelRequest {
+    string orderTrackingId = 1;
+}
+
+message DirectOrderCancelResponse {
+    bool okStatus = 1;
+}
+
+service DirectOrderService {
+    rpc PlaceDirectOrder (DirectOrderRequest) returns (DirectOrderResponse);
+    rpc CancelDirectOrder (DirectOrderCancelRequest) returns (DirectOrderCancelResponse);
+}

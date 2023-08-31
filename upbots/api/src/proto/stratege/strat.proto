@@ -1,0 +1,126 @@
+// Trading Strategy definition.
+syntax = "proto3";
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/empty.proto";
+package strategie;
+
+// must match PhaseEnum from shared/strat/model.go
+enum Phase {
+    // default invalid phase
+    NOPHASESET = 0;
+    WaitingForEntry = 1;
+    EntryRequested = 2;
+    EnteredPartial = 3;
+    Entered = 4;
+    TakeProfitRequested = 5;
+    TakeProfitReached = 6;
+    StratLockedState = 7;
+    ClosedByEntryMissed = 8;
+    ClosingByStopLoss = 9;
+    ClosingByTakeprofit = 10;
+    ClosedByStopLoss = 11;
+    ClosedByTakeProfit = 12;
+    OrderCancelledByUser = 13;
+    StatusError = 14;
+}
+
+enum SideType {
+    UNKNOWN_SIDE_TYPE = 0;
+    BUY = 1;
+    SELL = 2;
+}
+
+enum TargetType {
+    NOT_SET = 0;
+    REQUESTED = 1;
+    REACHED = 2;
+}
+
+message Market {
+    string exchange = 1;  
+    string symbol = 2;   
+}
+
+message TakeProfit {
+    TargetType status = 1;
+    double trigger = 2;
+    double quantity = 3;
+    // TODO: add order price
+}
+
+message AccountInfo {      
+    string userID = 1;      
+    string apiKeyID = 2;    
+}
+
+message Entry {
+    bool marketEntry = 1;
+    bool limitEntry = 2;
+    double triggerPrice = 3; // should by ignored for market
+    double limitPrice = 4; // should by ignored for market
+    double quantity = 5;
+}
+
+message Strategy {
+    // Protobuf doesn’t support the concept of “empty” enums — getting the value of an 
+    // enum field will always return some value, even if the value was never set by the caller/recipient.
+    // For an enum, protobuf defaults to the enum constant at ordinal 0 For this reason, 
+    // a common practice is to create an “unknown” enum type at position 0
+ 
+
+    double entryRangeFrom = 1;
+    double entryRangeTo = 2;
+    double stopLoss = 3;  
+    SideType side = 4; 
+    double volume = 5; 
+    Market market = 6;
+    repeated TakeProfit takeProfits = 7;
+    string GUID = 8; 
+    AccountInfo account = 9;
+    google.protobuf.Timestamp created_at = 10;
+    google.protobuf.Timestamp updated_at = 11;
+    Phase phase = 12;
+    repeated Entry entries = 13;
+
+    // repeated Order orders = 8;
+}
+
+
+// use purpose-built messages for each RPC definition, you can evolve them independently over time.
+message GetStratRequest {
+    string GUID = 1; 
+}
+message GetStratResponse {
+    Strategy strat = 1; 
+}
+message GetUserStrategiesRequest {
+    string userID = 1;      
+}
+message GetUserStrategiesResponse {
+    repeated Strategy strats = 1;
+}
+message CreateStratRequest {
+    repeated Entry entries = 1;
+    double entryRangeFrom = 2;
+    double entryRangeTo = 3;
+    repeated TakeProfit takeProfits = 4;
+    double stopLoss = 5;  
+    SideType side = 6; 
+    double volume = 7; 
+    Market market = 8;
+    AccountInfo account = 9;
+}
+
+message CreateStratResponse {
+    Strategy strat = 1; 
+}
+message HealthCheckResponse {
+    bool okStatus = 1; 
+}
+
+service StrategeService {
+    rpc GetStrategie (GetStratRequest) returns (GetStratResponse);
+    rpc GetUserStrategies (GetUserStrategiesRequest) returns (GetUserStrategiesResponse);
+    rpc CreateStrategie (CreateStratRequest) returns (CreateStratResponse);
+    rpc HealthCheck(google.protobuf.Empty) returns (HealthCheckResponse) {}
+}

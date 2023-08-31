@@ -1,0 +1,23 @@
+/* Base files */
+@import "base/_base";
+@import "base/_normalize";
+
+/* Components files */
+  /* Shared files */
+@import "components/shared/_gradients";
+@import "components/shared/_text-shadow";
+@import "components/shared/_general";
+@import "components/shared/_vue-tel-input";
+
+/* Utils files */
+@import "utils/_loaders";
+@import "fonts/icomoon/_icomoon";
+@import "fonts/lato/_lato-fonts";
+@import "fonts/raleway/_raleway-fonts";
+
+/* Tailwind config */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import "swiper/dist/css/swiper";

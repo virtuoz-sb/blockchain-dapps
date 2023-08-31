@@ -1,0 +1,8 @@
+coverage
+dist
+log
+*.d.ts
+jest-all.json
+jest-e2e.json
+src/main-swagger-spec.json
+test/utils/data

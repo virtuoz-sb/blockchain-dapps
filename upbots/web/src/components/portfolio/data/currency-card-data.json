@@ -1,0 +1,25 @@
+{
+  "portfolioSummaryCurrency": {
+    "exchanges": {
+      "title": "Exchanges",
+      "btc": 3.02503503,
+      "eur": 135696.44,
+      "usd": 212330.22,
+      "conversionDate": "2020-11-24T00:00:00.000Z"
+    },
+    "ethWallets": {
+      "title": "ETH Wallets",
+      "btc": 3.02503503,
+      "eur": 135696.44,
+      "usd": 212330.22,
+      "conversionDate": "2020-11-24T00:00:00.000Z"
+    },
+    "defi": {
+      "title": "Defi",
+      "btc": 3.02503503,
+      "eur": 135696.44,
+      "usd": 212330.22,
+      "conversionDate": "2020-11-24T00:00:00.000Z"
+    }
+  }
+}

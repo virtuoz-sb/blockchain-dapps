@@ -1,0 +1,55 @@
+syntax = "proto3";
+// import "google/protobuf/timestamp.proto";
+package algobot;
+
+
+message FollowBotRequest {
+    string botID = 1;
+    string userID = 2;      
+    string apiKeyID = 3; 
+    string stratType = 4;
+    string accountType=5;
+    double accountPercentage = 6;
+    double accountLeverage = 7;
+    double contractSize = 8;
+    double baseAmount = 9;
+    string positionType = 10;
+    double positionAmount = 11;
+    string quote = 12;
+}
+
+message FollowBotResponse {
+    string botID = 1;
+    string subscriptionId = 2;
+}
+
+enum PauseActionType {
+    NOT_ACTION_TYPE_SET = 0;
+    PAUSE = 1;
+    RESUME = 2;
+}
+
+message UserBotSubscriptionPauseRequest {
+    string subId = 1;
+    PauseActionType action = 2;
+}
+
+message UserBotSubscriptionPauseResponse {
+    string subId = 1;
+    bool enabled = 2;
+}
+
+message DeleteSubscriptionRequest {
+    string subId = 1;
+}
+
+message DeleteSubscriptionResponse {
+    string ack = 1;
+}
+
+service AlgobotService {
+    rpc FollowAlgobot (FollowBotRequest) returns (FollowBotResponse);
+    rpc PauseUnpause (UserBotSubscriptionPauseRequest) returns (UserBotSubscriptionPauseResponse);
+    rpc DeleteSubscription (DeleteSubscriptionRequest) returns (DeleteSubscriptionResponse);
+
+}

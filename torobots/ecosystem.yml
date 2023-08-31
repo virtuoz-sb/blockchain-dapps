@@ -1,0 +1,28 @@
+# reference: https://dev.to/goodidea/setting-up-pm2-ci-deployments-with-github-actions-1494
+
+apps:
+  - name: engine
+    script: "./apps/engine/dist/index.js"
+  #  args: engine:serve
+  #  interpreter: none
+  - name: api
+    script: "./apps/api/dist/src/main.js"
+    # args: api serve
+    # interpreter: none
+  # - name: web
+  #   script: yarn
+  #   args: web serve
+  #   interpreter: none
+
+deploy:
+  production:
+    user: root
+    host: 23.88.70.95
+    key: deploy.key
+    ref: origin/production-build
+    repo: git@github.com:Lightfifty-GG/torobots.git
+    path: /torobots
+    post-setup: ls -la
+    post-deploy: source ~/.zshrc && pm2 reload ecosystem.yml --env production
+    env:
+      NODE_ENV: production

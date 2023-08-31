@@ -1,0 +1,107 @@
+.tooltip {
+  @apply z-120;
+}
+
+// Dropdown preview classess (light and dark state)
+.dropdown {
+  &.is-light {
+    .dropdown {
+      &__preview-expand {
+        @apply text-white;
+        font-size: 6px;
+        transition: all 0.3s linear;
+      }
+      &__preview-title {
+        @apply text-iceberg leading-sm;
+      }
+    }
+  }
+
+  &.is-dark {
+    .dropdown {
+      &__preview-expand {
+        @apply text-white;
+        font-size: 6px;
+        transition: all 0.3s linear;
+      }
+      &__preview-title {
+        @apply text-iceberg leading-sm;
+      }
+    }
+  }
+}
+
+// Dropdown content classess (light and dark state)
+.dropdown {
+  &__content {
+    &.is-light {
+      background: #214759;
+      .dropdown {
+        &__content-item-title {
+          @apply text-bali-hai;
+        }
+        &__content-item {
+          transition: 0.3s ease-in;
+          &:hover {
+            background: #3C6C83B3;
+            .dropdown {
+              &__content-item-title {
+                @apply text-white;
+              }
+            }
+          }
+        }
+      }
+    }
+    &.dropdown-list {
+      .dropdown {
+        &__content-item {
+          &:hover {
+            .dropdown {
+              &__list-icon {
+                @apply bg-white;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.is-dark {
+      background: #214759;
+      .dropdown {
+        &__content-item-title {
+          @apply text-iceberg;
+        }
+        &__content-item {
+          transition: 0.3s ease-in;
+          &:hover {
+            background: #3C6C83B3;
+            .dropdown {
+              &__content-item-title {
+                @apply text-white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__content-list-wrap {
+    &.size-xs {
+      @apply my-7;
+      max-height: 92px;
+    }
+    &.size-sm {
+      @apply my-10;
+      max-height: 90px;
+      @media(max-width: 767px) {
+        max-height: 101px;
+      }
+    }
+  }
+  &__content-item-title {
+    @apply leading-xs;
+  }
+}

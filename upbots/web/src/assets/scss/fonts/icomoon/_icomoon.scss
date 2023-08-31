@@ -1,0 +1,358 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('~@/assets/fonts/icomoon/icomoon.eot?zee6');
+  src:  url('~@/assets/fonts/icomoon/icomoon.eot?zee6#iefix') format('embedded-opentype'),
+    url('~@/assets/fonts/icomoon/icomoon.ttf?zee6') format('truetype'),
+    url('~@/assets/fonts/icomoon/icomoon.woff?zee6') format('woff'),
+    url('~@/assets/fonts/icomoon/icomoon.svg?zee6#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+/*! purgecss start ignore */
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*! purgecss end ignore */
+
+.icon-google:before {
+  content: "\e969";
+}
+.icon-facebook-short:before {
+  content: "\e96b";
+}
+.icon-dex:before {
+  content: "\e968";
+  color: #378c9c;
+}
+.icon-cex:before {
+  content: "\e96a";
+  color: #378c9c;
+}
+.icon-tips:before {
+  content: "\e963";
+}
+.icon-staking-program:before {
+  content: "\e966";
+}
+.icon-plus-stroke:before {
+  content: "\e965";
+}
+.icon-minus-stroke:before {
+  content: "\e964";
+}
+.icon-clock:before {
+  content: "\e95b";
+}
+.icon-swap-new:before {
+  content: "\e962";
+}
+.icon-notification:before {
+  content: "\e95f";
+}
+.icon-tutorial:before {
+  content: "\e960";
+}
+.icon-ubxt-info:before {
+  content: "\e961";
+}
+.icon-key-new:before {
+  content: "\e95e";
+}
+.icon-arrow-right-new:before {
+  content: "\e95d";
+}
+.icon-wallet-new:before {
+  content: "\e95c";
+}
+.icon-trade-new:before {
+  content: "\e952";
+}
+.icon-bot-new:before {
+  content: "\e953";
+}
+.icon-bots-new:before {
+  content: "\e954";
+}
+.icon-copy-new:before {
+  content: "\e955";
+}
+.icon-dashboard-new:before {
+  content: "\e956";
+}
+.icon-education-new:before {
+  content: "\e957";
+}
+.icon-infinite:before {
+  content: "\e967";
+}
+.icon-portfolio-new:before {
+  content: "\e958";
+}
+.icon-signal-new:before {
+  content: "\e959";
+}
+.icon-staking-new:before {
+  content: "\e95a";
+}
+.icon-copy:before {
+  content: "\e94f";
+}
+.icon-refresh:before {
+  content: "\e951";
+}
+.icon-discord:before {
+  content: "\e950";
+}
+.icon-ubxt-wallet:before {
+  content: "\e94e";
+}
+.icon-accordion-minus:before {
+  content: "\e947";
+}
+.icon-accordion-plus:before {
+  content: "\e94d";
+}
+.icon-facebook:before {
+  content: "\e945";
+}
+.icon-filters:before {
+  content: "\e946";
+}
+.icon-instagram:before {
+  content: "\e948";
+}
+.icon-linkedin:before {
+  content: "\e949";
+}
+.icon-telegram:before {
+  content: "\e94a";
+}
+.icon-twitter:before {
+  content: "\e94b";
+}
+.icon-youtube:before {
+  content: "\e94c";
+}
+.icon-bitcoin:before {
+  content: "\e942";
+}
+.icon-present:before {
+  content: "\e943";
+}
+.icon-padlock:before {
+  content: "\e944";
+}
+.icon-info-filled:before {
+  content: "\e941";
+}
+.icon-bill:before {
+  content: "\e940";
+}
+.icon-info:before {
+  content: "\e93f";
+}
+.icon-warning1:before {
+  content: "\e93e";
+}
+.icon-success:before {
+  content: "\e93d";
+}
+.icon-error:before {
+  content: "\e93c";
+}
+.icon-arrow-filled:before {
+  content: "\e93b";
+}
+.icon-question:before {
+  content: "\e93a";
+}
+.icon-approximately-equel:before {
+  content: "\e939";
+}
+.icon-long-arrow:before {
+  content: "\e938";
+}
+.icon-dots:before {
+  content: "\e937";
+}
+.icon-lock:before {
+  content: "\e936";
+}
+.icon-search:before {
+  content: "\e935";
+}
+.icon-setting:before {
+  content: "\e92d";
+  color: #606675;
+}
+.icon-training:before {
+  content: "\e934";
+}
+.icon-rent:before {
+  content: "\e92e";
+}
+.icon-growth:before {
+  content: "\e92f";
+}
+.icon-marketplace:before {
+  content: "\e930";
+}
+.icon-marketing:before {
+  content: "\e931";
+}
+.icon-balances:before {
+  content: "\e932";
+}
+.icon-check-list:before {
+  content: "\e933";
+}
+.icon-arrow-expand-secondary:before {
+  content: "\e92c";
+  color: #606675;
+}
+.icon-signals-providers:before {
+  content: "\e905";
+}
+.icon-algo-bots:before {
+  content: "\e928";
+}
+.icon-staking:before {
+  content: "\e929";
+}
+.icon-swap:before {
+  content: "\e92a";
+}
+.icon-dashboard:before {
+  content: "\e92b";
+}
+.icon-eye:before {
+  content: "\e927";
+}
+.icon-shield:before {
+  content: "\e922";
+}
+.icon-list:before {
+  content: "\e923";
+}
+.icon-triangle:before {
+  content: "\e924";
+}
+.icon-power:before {
+  content: "\e925";
+}
+.icon-power-1:before {
+  content: "\e926";
+}
+.icon-more:before {
+  content: "\e921";
+}
+.icon-menu:before {
+  content: "\e920";
+}
+.icon-plus-bordered:before {
+  content: "\e91f";
+}
+.icon-star-bordered:before {
+  content: "\e91e";
+}
+.icon-starempty:before {
+  content: "\e90d";
+}
+.icon-cross:before {
+  content: "\e91d";
+}
+.icon-warning:before {
+  content: "\e91c";
+}
+.icon-my-wallet:before {
+  content: "\e906";
+}
+.icon-my-performance:before {
+  content: "\e907";
+}
+.icon-new-trade:before {
+  content: "\e90b";
+}
+.icon-learning:before {
+  content: "\e916";
+}
+.icon-copy-trading:before {
+  content: "\e917";
+}
+.icon-my-bots:before {
+  content: "\e918";
+}
+.icon-check-bold:before {
+  content: "\e91b";
+}
+.icon-up-bar:before {
+  content: "\e913";
+}
+.icon-arrow-expand:before {
+  content: "\e91a";
+}
+.icon-close:before {
+  content: "\e919";
+}
+.icon-checkbox:before {
+  content: "\e900";
+}
+.icon-edit:before {
+  content: "\e901";
+}
+.icon-expand:before {
+  content: "\e902";
+}
+.icon-extra-close:before {
+  content: "\e903";
+}
+.icon-key:before {
+  content: "\e904";
+}
+.icon-pin:before {
+  content: "\e908";
+}
+.icon-plus:before {
+  content: "\e909";
+}
+.icon-screenshot:before {
+  content: "\e90a";
+}
+.icon-star:before {
+  content: "\e90c";
+}
+.icon-trash:before {
+  content: "\e90e";
+}
+.icon-unpin:before {
+  content: "\e90f";
+}
+.icon-alert:before {
+  content: "\e910";
+}
+.icon-calendar:before {
+  content: "\e911";
+}
+.icon-arrow-back:before {
+  content: "\e912";
+}
+.icon-contract:before {
+  content: "\e914";
+}
+.icon-check:before {
+  content: "\e915";
+}

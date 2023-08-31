@@ -1,0 +1,591 @@
+module.exports = {
+  prefix: "",
+  important: false,
+  separator: ":",
+  theme: {
+    screens: {
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      xxxl: "1800px",
+    },
+
+    colors: {
+      transparent: "transparent",
+
+      black: "#000000",
+      white: "#FFFFFF",
+
+      grey: {
+        100: "#929CB2",
+      },
+
+      "grey-cl": {
+        100: "#929CB3",
+        200: "#798194",
+        300: "#606675",
+        400: "#474C57",
+        500: "#393d46",
+        600: "#8F9BB3",
+        700: "#2E3A59",
+        800: "#373C47",
+        900: "#494F5C",
+        910: "#B5C1DB",
+        920: "#929CB2",
+      },
+
+      "dark-cl": {
+        100: "#2D3037",
+        200: "#15161A",
+        300: "#151619",
+        400: "#151A30",
+        500: "#0D0E14",
+      },
+
+      "blue-cl": {
+        100: "#0083B8",
+        200: "#00A3E6",
+        300: "#00648C",
+        400: "#27ADC5",
+        500: "#6ED4CA",
+        600: "#213F7B",
+        700: "#27ADC6",
+        800: "#1C92A7",
+      },
+
+      "red-cl": {
+        100: "#FF3122",
+        200: "#FF3A29",
+      },
+
+      "green-cl": {
+        100: "#59A733",
+        200: "#64B239",
+        300: "#529A95",
+      },
+
+      "yellow-cl": "#E8821E",
+
+      dark: {
+        100: "#0E131A",
+        200: "rgba(50, 75, 86, 0.37)",
+      },
+
+      // New palette colors //
+      iceberg: "#D5F2F2",
+      shakespeare: "#47C1D4",
+      astral: "#378C9C",
+      tradewind: "#60BCB5",
+      turquoise: "#3AD1C6",
+      downy: "#6AD0C8",
+      mirage: "#1B2A32",
+      tangaroa: "#1A2E37",
+      ming: "#316279",
+      cello: "#204C61",
+      masala: "#3F3535",
+      william: "#355767",
+      tiber: "#0D1F28",
+
+      "kuroi-black": "#0E171E",
+      "kuroi-black-opacity": "#0E171EE6", // color (#0E171E) with 0.9 opacity
+      "coral-coast": "#0b8ca1",
+      "puerto-rico": "#42C0B7",
+      "aquamarine-blue": "#76D4E3",
+      "bright-turquoise": "#32DAF5",
+      "gable-green": "#162730",
+      "faded-jade": "#427E7E",
+      "jungle-green": "#299D95",
+      "hidden-sea-glass": "#6DD3C9",
+      "blue-dianne": "#234C55",
+      "jelly-bean": "#28869E",
+      "abyssal-anchorfish-blue": "#1A2B34",
+      "white-lilac": "#F0F0F9",
+      "san-juan": "#2D5162",
+      "turquoise-blue": "#68E7DD",
+      "red-orange": "#FF3122",
+      "bali-hai": "#88A8B0",
+      "hei-se-black": "#15232B",
+      "elite-teal": "#142d39",
+      "ore-blish-black": "#1A3039",
+      "bachelor-button": "#47C1D5",
+
+      info: "#27ADC5",
+      warning: "#DBA452",
+      error: "#F97168",
+      success: "#72B657",
+    },
+
+    spacing: {
+      px: "1px",
+      0: "0",
+      2: "2px",
+      3: "3px",
+      4: "4px",
+      5: "5px",
+      6: "6px",
+      7: "7px",
+      8: "8px",
+      9: "9px",
+      10: "10px",
+      11: "11px",
+      11.5: "11.5px",
+      12: "12px",
+      13: "13px",
+      14: "14px",
+      15: "15px",
+      16: "16px",
+      18: "18px",
+      19: "19px",
+      20: "20px",
+      21: "21px",
+      22: "22px",
+      23: "23px",
+      24: "24px",
+      25: "25px",
+      26: "26px",
+      27: "27px",
+      28: "28px",
+      29: "29px",
+      30: "30px",
+      32: "32px",
+      34: "34px",
+      35: "35px",
+      36: "36px",
+      37: "37px",
+      38: "38px",
+      40: "40px",
+      42: "42px",
+      43: "43px",
+      44: "44px",
+      45: "45px",
+      47: "47px",
+      48: "48px",
+      50: "50px",
+      53: "53px",
+      56: "56px",
+      60: "60px",
+      61: "61px",
+      64: "64px",
+      66: "66px",
+      70: "70px",
+      75: "75px",
+      80: "80px",
+      85: "85px",
+      90: "90px",
+      100: "100px",
+      112: "112px",
+      120: "120px",
+      140: "140px",
+      180: "180px",
+      200: "200px",
+    },
+
+    backgroundColor: (theme) => theme("colors"),
+
+    backgroundPosition: {
+      bottom: "bottom",
+      center: "center",
+      left: "left",
+      "left-bottom": "left bottom",
+      "left-top": "left top",
+      right: "right",
+      "right-bottom": "right bottom",
+      "right-top": "right top",
+      top: "top",
+    },
+
+    backgroundSize: {
+      auto: "auto",
+      cover: "cover",
+      contain: "contain",
+    },
+
+    radialGradientColors: (theme) => theme("colors"),
+
+    conicGradientColors: (theme) => theme("colors"),
+
+    linearGradientColors: (theme) => ({
+      ...theme("colors"),
+      10: ["#6ED4CA 0%", "#27ADC5 100%"],
+      20: ["#105A6C 0%", "#5BC5C8 100%"],
+      30: ["rgba(110, 212, 202, 0.1) 0%", "rgba(36, 129, 155, 0.3)  100%"],
+      40: ["#27ADC5 0%", "#FFFFFF 100%"],
+    }),
+
+    borderColor: (theme) => theme("colors"),
+
+    borderRadius: {
+      none: "0",
+      3: "3px",
+      4: "4px",
+      5: "5px",
+      6: "6px",
+      8: "8px",
+      10: "10px",
+      15: "15px",
+      full: "9999px",
+    },
+
+    borderWidth: {
+      default: "1px",
+      0: "0px",
+      2: "2px",
+      4: "4px",
+      14: "14px",
+    },
+
+    boxShadow: {
+      10: "0px 4px 15px rgba(0, 0, 0, 0.5)",
+      20: "0px 0px 15px rgba(0, 0, 0, 0.5)",
+      30: "0px 0px 5px rgba(74, 172, 179, 0.5)",
+      40: "0px 0px 5px rgba(75, 174, 179, 0.5)",
+      50: "0px 0px 10px rgba(0, 131, 184, 0.4)",
+      60: "0px 0px 7px rgba(255, 49, 34, 0.5)",
+      70: "0px 0px 7px rgba(89, 167, 51, 0.5)",
+      80: "0px 0px 3px rgba(0, 0, 0, 0.3)",
+      90: "0px 0px 5px rgba(33, 63, 123, 0.5)",
+      "red-10": "0px 0px 15px rgba(124, 21, 14, 0.5)",
+      100: "0px 0px 6px rgba(103, 173, 185, 0.4)",
+      110: "0px 0px 5px rgba(0, 0, 0, 0.2)",
+      120: "0px 0px 5px rgba(0, 0, 0, 0.3)",
+      130: "0px 4px 16px rgba(14, 23, 30, 0.1)",
+      140: "0px 0px 15px rgba(0, 0, 0, 0.2)",
+      150: "2px 8px 20px rgba(0, 0, 0, 0.2)",
+    },
+
+    fontFamily: {
+      lato: ["Lato", "sans-serif"],
+      raleway: ["Raleway", "sans-serif"],
+    },
+
+    fontSize: {
+      xxxs: "0.28571rem", // 4px
+      xxs: "0.571rem", // 8px
+      xs: "0.714rem", // 10px
+      sm: "0.857rem", // 12px
+      base: "1rem", // 14px
+      md: "1.142rem", // 16px
+      xl: "1.285rem", // 18px
+      xl1: "1.428rem", // 20px
+      xxl: "1.571rem", // 22px
+      xxl1: "1.7142rem", // 24px
+      xxl2: "2.2857rem", // 32px
+      xxl3: "2.5714rem", // 36px
+      xxxl1: "3.428rem", // 48px
+      xxxl2: "4.142rem", // 58px
+      xxxl6: "5.14285rem", // 72px
+      30: "2.142rem", // 30px
+    },
+
+    fontWeight: {
+      hairline: "100",
+      thin: "200",
+      light: "300",
+      normal: "400",
+      medium: "500",
+      semibold: "600",
+      bold: "700",
+      extrabold: "800",
+      black: "900",
+    },
+
+    lineHeight: {
+      normal: "normal",
+      1: "1",
+      xxs: "1.1",
+      xs: "1.16", // for fz: 12px, 18px
+      sm: "1.17", // for fz: 58px
+      md: "1.2", // for fz: 10px, 14px
+      xl: "1.3",
+    },
+
+    height: (theme) => ({
+      ...theme("spacing"),
+      auto: "auto",
+      full: "100%",
+      screen: "100vh",
+      "1/2": "50%",
+      "2/5": "40%",
+      "3/5": "60%",
+      165: "165px",
+      210: "210px",
+      260: "260px",
+    }),
+
+    width: (theme) => ({
+      auto: "auto",
+      ...theme("spacing"),
+      "1/2": "50%",
+      "1/3": "33.333333%",
+      "2/3": "66.666667%",
+      "1/4": "25%",
+      "2/4": "50%",
+      "3/4": "75%",
+      "1/5": "20%",
+      "2/5": "40%",
+      "3/5": "60%",
+      "4/5": "80%",
+      "1/6": "16.666667%",
+      "2/6": "33.333333%",
+      "3/6": "50%",
+      "4/6": "66.666667%",
+      "5/6": "83.333333%",
+      "7/10": "70%",
+      "1/12": "8.333333%",
+      "2/12": "16.666667%",
+      "3/12": "25%",
+      "4/12": "33.333333%",
+      "5/12": "41.666667%",
+      "6/12": "50%",
+      "7/12": "58.333333%",
+      "8/12": "66.666667%",
+      "9/12": "75%",
+      "10/12": "83.333333%",
+      "11/12": "91.666667%",
+      "3/10": "30%",
+      150: "150px",
+      240: "240px",
+      280: "280px",
+      330: "330px",
+      350: "350px",
+      full: "100%",
+      screen: "100vw",
+    }),
+
+    margin: (theme, { negative }) => ({
+      auto: "auto",
+      ...theme("spacing"),
+      ...negative(theme("spacing")),
+    }),
+
+    maxHeight: (theme) => ({
+      ...theme("spacing"),
+      full: "100%",
+      screen: "100vh",
+      300: "300px",
+    }),
+
+    maxWidth: (theme) => ({
+      ...theme("spacing"),
+      180: "180px",
+      200: "200px",
+      240: "240px",
+      280: "280px",
+      440: "440px",
+      "max-content": "max-content",
+      full: "100%",
+    }),
+
+    minHeight: (theme) => ({
+      ...theme("spacing"),
+      full: "100%",
+      screen: "100vh",
+      165: "165px",
+      300: "300px",
+    }),
+
+    minWidth: (theme) => ({
+      ...theme("spacing"),
+      "max-content": "max-content",
+      100: "100px",
+      120: "120px",
+      130: "130px",
+      150: "150px",
+      210: "210px",
+      280: "280px",
+      auto: "auto",
+      full: "100%",
+    }),
+
+    opacity: {
+      0: "0",
+      10: "0.1",
+      20: "0.2",
+      30: "0.3",
+      40: "0.4",
+      50: "0.5",
+      60: "0.6",
+      70: "0.7",
+      80: "0.8",
+      100: "1",
+    },
+
+    padding: (theme) => theme("spacing"),
+
+    placeholderColor: (theme) => theme("colors"),
+
+    textColor: (theme) => theme("colors"),
+
+    inset: {
+      0: "0",
+      3: "3px",
+      10: "10px",
+      11: "11px",
+      17: "17px",
+      20: "20px",
+      30: "30px",
+      40: "40px",
+      "1/2": "50%",
+
+      // negative
+      "-1": "-1px",
+    },
+
+    translate: {
+      "-1/2": "-50%",
+    },
+
+    order: {
+      first: "-9999",
+      last: "9999",
+      none: "0",
+      1: "1",
+      2: "2",
+      3: "3",
+    },
+
+    rotate: {
+      45: "45deg",
+      90: "90deg",
+      180: "180deg",
+      270: "270deg",
+    },
+
+    zIndex: {
+      auto: "auto",
+      0: "0",
+      1: "1",
+      2: "2",
+      10: "10",
+      20: "20",
+      30: "30",
+      40: "40",
+      50: "50",
+      80: "80",
+      90: "90",
+      100: "100",
+      110: "110",
+      120: "120",
+      130: "130",
+      150: "150",
+      190: "190",
+      200: "200",
+      210: "210", // only for loadings
+    },
+
+    cursor: {
+      auto: "auto",
+      default: "default",
+      pointer: "pointer",
+      text: "text",
+      wait: "wait",
+      "not-allowed": "not-allowed",
+    },
+
+    flex: {
+      1: "1 1 0%",
+      2: "2 2 0%",
+      auto: "1 1 auto",
+      initial: "0 1 auto",
+      none: "none",
+    },
+
+    flexGrow: {
+      0: "0",
+      default: "1",
+    },
+
+    flexShrink: {
+      0: "0",
+      default: "1",
+    },
+  },
+
+  variants: {
+    translate: ["responsive", "hover", "focus", "active", "group-hover"],
+    backgroundImage: ["responsive"],
+    linearGradients: ["responsive"],
+    radialGradients: ["responsive"],
+    conicGradients: ["responsive"],
+    repeatingLinearGradients: ["responsive"],
+    repeatingRadialGradients: ["responsive"],
+    repeatingConicGradients: ["responsive"],
+    accessibility: ["responsive", "focus"],
+    alignContent: ["responsive"],
+    alignItems: ["responsive"],
+    alignSelf: ["responsive"],
+    appearance: ["responsive"],
+    gradients: ["responsive", "hover"],
+    backgroundAttachment: ["responsive"],
+    backgroundColor: ["responsive", "hover", "focus", "active"],
+    backgroundPosition: ["responsive"],
+    backgroundRepeat: ["responsive"],
+    backgroundSize: ["responsive"],
+    borderCollapse: ["responsive"],
+    borderColor: ["responsive", "hover", "focus"],
+    borderRadius: ["responsive"],
+    borderStyle: ["responsive", "last"],
+    borderWidth: ["responsive", "last"],
+    boxShadow: ["responsive", "hover", "focus"],
+    boxSizing: ["responsive"],
+    cursor: ["responsive"],
+    display: ["responsive"],
+    fill: ["responsive"],
+    flex: ["responsive"],
+    flexDirection: ["responsive"],
+    flexGrow: ["responsive"],
+    flexShrink: ["responsive"],
+    flexWrap: ["responsive"],
+    float: ["responsive"],
+    clear: ["responsive"],
+    fontFamily: ["responsive"],
+    fontSize: ["responsive"],
+    fontSmoothing: ["responsive"],
+    fontStyle: ["responsive"],
+    fontWeight: ["responsive", "hover", "focus"],
+    height: ["responsive"],
+    inset: ["responsive"],
+    justifyContent: ["responsive"],
+    letterSpacing: ["responsive"],
+    lineHeight: ["responsive"],
+    listStylePosition: ["responsive"],
+    listStyleType: ["responsive"],
+    margin: ["responsive", "first", "last"],
+    maxHeight: ["responsive"],
+    maxWidth: ["responsive"],
+    minHeight: ["responsive"],
+    minWidth: ["responsive"],
+    objectFit: ["responsive"],
+    objectPosition: ["responsive"],
+    opacity: ["responsive", "hover", "focus", "active"],
+    order: ["responsive"],
+    outline: ["responsive", "focus"],
+    overflow: ["responsive"],
+    padding: ["responsive", "last", "first"],
+    placeholderColor: ["responsive", "focus"],
+    pointerEvents: ["responsive"],
+    position: ["responsive"],
+    resize: ["responsive"],
+    stroke: ["responsive"],
+    strokeWidth: ["responsive"],
+    tableLayout: ["responsive"],
+    textAlign: ["responsive"],
+    textColor: ["responsive", "hover", "focus"],
+    textDecoration: ["responsive", "hover", "focus"],
+    textTransform: ["responsive"],
+    userSelect: ["responsive"],
+    verticalAlign: ["responsive"],
+    visibility: ["responsive"],
+    whitespace: ["responsive"],
+    width: ["responsive"],
+    wordBreak: ["responsive"],
+    zIndex: ["responsive"],
+  },
+
+  corePlugins: {},
+
+  plugins: [require("tailwindcss-gradients")],
+
+  purge: false,
+};

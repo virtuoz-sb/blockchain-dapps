@@ -1,0 +1,10 @@
+::v-deep input:-webkit-autofill,
+::v-deep input:-webkit-autofill:hover,
+::v-deep input:-webkit-autofill:focus,
+::v-deep input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #2d5162 inset !important;
+}
+
+::v-deep input:-webkit-autofill {
+  -webkit-text-fill-color: #fff !important;
+}

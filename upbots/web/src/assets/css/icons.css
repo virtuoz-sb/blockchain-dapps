@@ -1,0 +1,36 @@
+/* .ico {
+    display: block;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.ico-circle{
+    display: block;
+    background-color: #1A2B34;
+    border-radius: 50%;
+    padding: 8px;
+    height: 35px;
+    width: 35px;
+}
+
+.ico-circle .ico {
+    margin: 0 auto;
+}
+
+.ico-info {
+    background-image: url('../icons/dashboard-icons/info.svg');
+}
+
+.ico-balance { 
+    background-image: url('../icons/dashboard-icons/balance.svg');
+}
+
+.ico-notification {
+    background-image: url('../icons/dashboard-icons/notification.svg');
+}
+
+.ico-question {
+    background-image: url('../icons/dashboard-icons/question.svg');
+} */

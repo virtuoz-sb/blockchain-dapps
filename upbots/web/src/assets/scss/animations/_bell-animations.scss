@@ -1,0 +1,57 @@
+.bell-top-anim {
+  animation: abanico 1000ms ease-in-out;
+  transform-origin: top;
+}
+
+.bell-bot-anim {
+  animation: badalo 1000ms ease-in-out;
+}
+
+@keyframes abanico {
+  0% {
+    transform: rotate(0deg);
+  }
+  8% {
+    transform: rotate(2deg);
+  }
+  20% {
+    transform: rotate(-5deg);
+  }
+  40% {
+    transform: rotate(5deg);
+  }
+  60% {
+    transform: rotate(-5deg);
+  }
+  80% {
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes badalo {
+  0% {
+  }
+  15% {
+    transform: translateX(-2px);
+  }
+  32.5% {
+    transform: translateX(2px);
+  }
+  50% {
+    transform: translateX(-2px);
+  }
+  65% {
+    transform: translateX(2px);
+  }
+  80% {
+    transform: translateX(-2px);
+  }
+  90% {
+    transform: translateX(0px);
+  }
+  100% {
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "quantityValuesJson": [
+    { "value": "all", "label": "ALL" },
+    { "value": "1,year", "label": "1Y" },
+    { "value": "6,months", "label": "6M" },
+    { "value": "3,months", "label": "3M" },
+    { "value": "1,month", "label": "1M" },
+    { "value": "2,weeks", "label": "2W" },
+    { "value": "1,week", "label": "W" },
+    { "value": "1,day", "label": "1D" }
+  ],
+
+  "chartFakeDataJson": [
+    {
+      "id": 1,
+      "borderColor": "rgba(14, 142, 186, 0.5)",
+      "backgroundColor": "rgba(14,142,186, 0.1)",
+      "isActive": true,
+      "data": [20, 15, 30, 45, 40, 20, 25, 30, 50, 70, 25, 40],
+      "label": "EUR",
+      "value": "EUR",
+      "yAxisID": "money",
+      "lineTension": 0.4,
+      "borderWidth": 2,
+      "pointBorderColor": "transparent",
+      "pointBackgroundColor": "transparent",
+      "pointBorderWidth": 0,
+      "pointHoverRadius": 0,
+      "pointHoverBackgroundColor": "transparent",
+      "pointHoverBorderColor": "transparent",
+      "pointHoverBorderWidth": 0,
+      "pointRadius": 0,
+      "pointHitRadius": 0
+    },
+    {
+      "id": 2,
+      "borderColor": "#6E4498",
+      "backgroundColor": "#000",
+      "isActive": true,
+      "data": [0.1432, 0.2242, 0.3673, 0.3563, 0.52135, 0.5246, 0.3473, 0.23534, 0.3525, 0.43243, 0.4352, 0.623423],
+      "label": "BTC",
+      "value": "BTC",
+      "yAxisID": "BTC",
+      "lineTension": 0.4,
+      "borderWidth": 2,
+      "pointBorderColor": "transparent",
+      "pointBackgroundColor": "transparent",
+      "pointBorderWidth": 0,
+      "pointHoverRadius": 0,
+      "pointHoverBackgroundColor": "transparent",
+      "pointHoverBorderColor": "transparent",
+      "pointHoverBorderWidth": 0,
+      "pointRadius": 0,
+      "pointHitRadius": 0
+    }
+  ],
+
+  "chartFakeLabelsJson": [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ],
+
+  "chartOptionsJson": {
+    "maintainAspectRatio": false,
+    "responsive": true,
+    "scales": {
+      "yAxes": [
+        {
+          "id": "BTC",
+          "type": "linear",
+          "position": "right",
+          "ticks": {
+            "beginAtZero": true,
+            "padding": 0
+          }
+        },
+        {
+          "id": "money",
+          "type": "linear",
+          "position": "left",
+          "ticks": {
+            "beginAtZero": true,
+            "padding": 0
+          }
+        }
+      ]
+    },
+    "plugins": {
+      "datalabels": {
+        "display": false
+      }
+    },
+    "tooltips": {
+      "mode": "index",
+      "intersect": false
+    },
+    "hover": {
+      "mode": "nearest",
+      "intersect": true
+    }
+  }
+}
